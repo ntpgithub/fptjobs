@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="msapplication-TileColor" content="#0E0E0E" />
+  <meta name="template-color" content="#0E0E0E" />
+  <link rel="manifest" href="manifest.json" crossorigin />
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="description" content="Index page" />
+  <meta name="keywords" content="index, page" />
+  <meta name="author" content />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg" />
+  <link href="assets/css/style.css?version=4.1" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Cơ hội việc làm</title>
+</head>
+
+<body>
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="text-center">
+          <img src="assets/imgs/template/loading.gif" alt="-" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalApplyJobForm" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Job Application</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Start your career today
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Please fill in your information and send it to the employer.
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 pb-30" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Full Name *</label>
+              <input class="form-control" id="input-1" type="text" required name="fullname" placeholder="Steven Job" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-2">Email *</label>
+              <input class="form-control" id="input-2" type="email" required name="emailaddress"
+                placeholder="stevenjob@gmail.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="number">Contact Number *</label>
+              <input class="form-control" id="number" type="text" required name="phone"
+                placeholder="(+01) 234 567 89" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="des">Description</label>
+              <input class="form-control" id="des" type="text" required name="Description"
+                placeholder="Your description..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="file">Upload Resume</label>
+              <input class="form-control" id="file" name="resume" type="file" />
+            </div>
+            <div class="login_footer form-group d-flex justify-content-between">
+              <label class="cb-container">
+                <input type="checkbox" /><span class="text-small">Agree our
+                  terms and policy</span><span class="checkmark"></span>
+              </label><a class="text-muted" href="page-contact.html">Lean more</a>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default hover-up w-100" type="submit" name="login">
+                Apply Job
+              </button>
+            </div>
+            <div class="text-muted text-center">
+              Do you need support? <a href="page-contact.html">Contact Us</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header sticky-bar">
+    <div class="container">
+      <div class="main-header">
+        <div class="header-left">
+          <div class="header-logo">
+            <a class="d-flex" href="index.html"><img alt="-"
+                src="assets/imgs/template/fpt-telecom-ngang-logo.svg" /></a>
+          </div>
+        </div>
+        <div class="header-nav">
+          <nav class="nav-main-menu">
+            <ul class="main-menu">
+              <li>
+                <a href="/jobs-grid.html">Việc làm</a>
+              </li>
+              <li class="has-children">
+                <a href="#">Về chúng tôi</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Giới thiệu công ty</a></li>
+                  <li><a href="#">Thông tin liên hệ</a></li>
+                  <li><a href="#">Tham quan công ty</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Life at FTEL</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Hoạt động</a></li>
+                  <li><a href="#">Văn hóa đặc sắc</a></li>
+                  <li><a href="#">Phát triển sự nghiệp</a></li>
+                  <li><a href="#">Phúc lợi</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Tin tức & Sự kiện</a>
+                <ul class="sub-menu">
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">SV Tài năng</a></li>
+                  <li><a href="#">SV Công nghệ Tập sự</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-icon burger-icon-white">
+            <span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span
+              class="burger-icon-bottom"></span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="block-signin">
+            <a class="text-link-bd-btom hover-up" href="page-register.html">Đăng ký</a>
+            <a class="btn btn-default btn-shadow ml-30 hover-up" href="page-signin.html">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar" style="z-index: 9999;">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-content-area">
+        <div class="perfect-scroll">
+          <div class="mobile-search mobile-header-border mb-30">
+            <form action="#">
+              <input type="text" placeholder="Search…" /><i class="fi-rr-search"></i>
+            </form>
+          </div>
+          <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start-->
+            <nav>
+              <ul class="mobile-menu font-heading">
+                <li class>
+                  <a href="/jobs-grid.html">Cơ hội Việc làm</a>
+                </li>
+                <li class="has-children">
+                  <a href="#">Về chúng tôi</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Giới thiệu công ty</a></li>
+                    <li><a href="#">Thông tin liên hệ</a></li>
+                    <li><a href="#">Tham quan công ty</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Life at FTEL</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Hoạt động</a></li>
+                    <li><a href="#">Văn hóa đặc sắc</a></li>
+                    <li><a href="#">Phát triển sự nghiệp</a></li>
+                    <li><a href="#">Phúc lợi</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tin tức & Sự kiện</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Sinh viên Tài năng</a></li>
+                    <li><a href="#">Sinh viên Công nghệ Tập sự</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-account">
+            <h6 class="mb-10">Tài khoản</h6>
+            <ul class="mobile-menu font-heading">
+              <li><a href="#">Thông tin cá nhân</a></li>
+              <li><a href="#">Đã ứng tuyển</a></li>
+              <li><a href="#">Đang theo dõi</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+              <li><a href="page-signin.html">Đăng xuất</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">
+            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB ft
+            FTEL.HRIS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-content-area">
+        <div class="perfect-scroll">
+          <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start-->
+            <nav>
+              <ul class="mobile-menu font-heading">
+                <li class>
+                  <a href="/jobs-grid.html">Cơ hội Việc làm</a>
+                </li>
+                <li class="has-children">
+                  <a href="#">Về chúng tôi</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Giới thiệu công ty</a></li>
+                    <li><a href="#">Thông tin liên hệ</a></li>
+                    <li><a href="#">Tham quan công ty</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Life at FTEL</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Hoạt động</a></li>
+                    <li><a href="#">Văn hóa đặc sắc</a></li>
+                    <li><a href="#">Phát triển sự nghiệp</a></li>
+                    <li><a href="#">Phúc lợi</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tin tức & Sự kiện</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Sinh viên Tài năng</a></li>
+                    <li><a href="#">Sinh viên Công nghệ Tập sự</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-account">
+            <h6 class="mb-10">Tài khoản</h6>
+            <ul class="mobile-menu font-heading">
+              <li><a href="#">Thông tin cá nhân</a></li>
+              <li><a href="#">Đã ứng tuyển</a></li>
+              <li><a href="#">Đang theo dõi</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+              <li><a href="page-signin.html">Đăng xuất</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">
+            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB ft
+            FTEL.HRIS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="section-box-2 bg-fpt-element-right">
+      <div class="container ">
+        <div class="banner-hero banner-single banner-single-bg">
+          <div class="block-banner text-center ">
+            <h3 class="wow animate__animated animate__fadeInUp"><span class="color-brand-2">243 Vị trí</span> đang tuyển
+              dụng
+            </h3>
+            <div class="form-find text-start mt-40 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+              <form>
+                <div class="box-industry">
+                  <select class="form-input mr-10 select-active input-industry">
+                    <option value disabled selected>Ngành nghề</option>
+                    <option value="1">Báo chí</option>
+                    <option value="2">Truyền hình</option>
+                    <option value="3">Phần cứng</option>
+                    <option value="4">Mạng</option>
+                    <option value="5">Điện tử</option>
+                    <option value="6">Thiết kế</option>
+                  </select>
+                </div>
+                <select class="form-input mr-10 select-active">
+                  <option value="0" disabled selected>Khu vực</option>
+                  <option value="AG">An Giang</option>
+                  <option value="BV">Bà Rịa - Vũng Tàu</option>
+                  <option value="BG">Bắc Giang</option>
+                  <option value="BK">Bắc Kạn</option>
+                  <option value="BL">Bạc Liêu</option>
+                  <option value="BN">Bắc Ninh</option>
+                  <option value="BT">Bến Tre</option>
+                  <option value="BD">Bình Định</option>
+                  <option value="BP">Bình Phước</option>
+                  <option value="BV">Bình Dương</option>
+                  <option value="BT">Bình Thuận</option>
+                  <option value="CM">Cà Mau</option>
+                  <option value="CB">Cao Bằng</option>
+                  <option value="CT">Cần Thơ</option>
+                  <option value="DN">Đà Nẵng</option>
+                  <option value="DL">Đắk Lắk</option>
+                  <option value="DK">Đắk Nông</option>
+                  <option value="DB">Điện Biên</option>
+                  <option value="DN">Đồng Nai</option>
+                  <option value="DT">Đồng Tháp</option>
+                  <option value="GL">Gia Lai</option>
+                  <option value="HG">Hà Giang</option>
+                  <option value="HN">Hà Nội</option>
+                  <option value="HT">Hà Tĩnh</option>
+                  <option value="HD">Hải Dương</option>
+                  <option value="HP">Hải Phòng</option>
+                  <option value="HB">Hòa Bình</option>
+                  <option value="HY">Hưng Yên</option>
+                  <option value="KH">Khánh Hòa</option>
+                  <option value="KG">Kiên Giang</option>
+                  <option value="KT">Kon Tum</option>
+                  <option value="LC">Lai Châu</option>
+                  <option value="LD">Lâm Đồng</option>
+                  <option value="LS">Lạng Sơn</option>
+                  <option value="LA">Long An</option>
+                  <option value="ND">Nam Định</option>
+                  <option value="NA">Nghệ An</option>
+                  <option value="NB">Ninh Bình</option>
+                  <option value="NT">Ninh Thuận</option>
+                  <option value="PT">Phú Thọ</option>
+                  <option value="PY">Phú Yên</option>
+                  <option value="QB">Quảng Bình</option>
+                  <option value="QNa">Quảng Nam</option>
+                  <option value="QNg">Quảng Ngãi</option>
+                  <option value="QN">Quảng Ninh</option>
+                  <option value="QT">Quảng Trị</option>
+                  <option value="ST">Sóc Trăng</option>
+                  <option value="SL">Sơn La</option>
+                  <option value="TN">Tây Ninh</option>
+                  <option value="TB">Thái Bình</option>
+                  <option value="TN">Thái Nguyên</option>
+                  <option value="TT">Thanh Hóa</option>
+                  <option value="TTH">Thừa Thiên Huế</option>
+                  <option value="TG">Tiền Giang</option>
+                  <option value="TV">Trà Vinh</option>
+                  <option value="TQ">Tuyên Quang</option>
+                  <option value="VL">Vĩnh Long</option>
+                  <option value="VP">Vĩnh Phúc</option>
+                  <option value="YB">Yên Bái</option>
+                  <option value="HCM">TP. Hồ Chí Minh</option>
+                </select>
+                <input class="form-input input-keysearch mr-10" type="text" placeholder="Vị trí, chức danh... " />
+                <button class="btn btn-default btn-find font-sm">
+                  Tìm kiếm
+                </button>
+              </form>
+            </div>
+            <div class="list-tags-banner mt-20 wow animate__animated animate__fadeInUp text-start" data-wow-delay=".3s">
+              <strong>Phổ biến:</strong><a href="#">Thực tập sinh</a>,
+              <a href="#">Nhân viên Kinh doanh</a>, <a href="#">Marketing</a>,
+              <a href="#">Giao dịch viên</a>, <a href="#">Developer</a>,
+              <a href="#">Data</a>, <a href="#">Engineer</a>, <a href="#">Chăm sóc Khách hàng</a>, <a href="#">Chuyên
+                viên tư vấn</a>, <a href="#">Giám đốc khối ngành</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-box mt-30 bg-fpt-element-left">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div class="col-lg-9 col-md-12 col-sm-12 col-12 float-right">
+            <div class="content-page">
+              <div class="box-filters-job">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-5"><span class="text-small text-showing">Vị trí <strong>21-41 </strong>của
+                      <strong>243 </strong>Việc làm</span></div>
+                  <div class="col-xl-6 col-lg-7 text-lg-end mt-sm-15">
+                    <div class="display-flex2">
+                      <div class="box-border mr-10"><span class="text-sortby">Hiển thị:</span>
+                        <div class="dropdown dropdown-sort">
+                          <button class="btn dropdown-toggle" id="dropdownSort" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-display="static"><span>12</span><i
+                              class="fi-rr-angle-small-down"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort">
+                            <li><a class="dropdown-item active" href="#">12</a></li>
+                            <li><a class="dropdown-item" href="#">24</a></li>
+                            <li><a class="dropdown-item" href="#">36</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="box-border"><span class="text-sortby">Sắp xếp:</span>
+                        <div class="dropdown dropdown-sort">
+                          <button class="btn dropdown-toggle" id="dropdownSort2" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-display="static"><span>Mới nhất</span><i
+                              class="fi-rr-angle-small-down"></i></button>
+                          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownSort2">
+                            <li><a class="dropdown-item active" href="#">Mới nhất</a></li>
+                            <li><a class="dropdown-item" href="#">Cũ nhất</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="box-view-type"><a class="view-type" href="jobs-list.html"><img
+                            src="assets/imgs/template/icons/icon-list-hover.svg" alt="jobBox"></a><a class="view-type"
+                          href="jobs-grid.html"><img src="assets/imgs/template/icons/icon-grid.svg" alt="jobBox"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                      <div class="right-info">
+                        <h6><a class href="#">Nghiên cứu Thị trường</a></h6>
+                        <span class="card-briefcase">Thực tập</span>
+                        <span class="card-location">Huế</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 01/03/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Tham gia nghiên cứu xu hướng thị trường<br>
+                        • Phân tích dữ liệu từ các nguồn khác nhau<br>
+                        • Hỗ trợ tổng hợp và trình bày báo cáo
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Thực tập sinh</a>
+                        <a class="btn btn-grey-small mr-5" href="#">Nghiên cứu</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">Lương thoả thuận</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Chuyên viên Marketing Online</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Đà Nẵng</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 15/03/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Quản lý và triển khai các chiến dịch marketing trực tuyến<br>
+                        • Phân tích dữ liệu và đánh giá hiệu quả chiến dịch<br>
+                        • Tối ưu hóa hiệu quả quảng cáo và ROI
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Marketing</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">8 - 12 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Trưởng phòng Nhân sự</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Đắc Lắk</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 10/04/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Quản lý và phát triển chiến lược nhân sự toàn diện<br>
+                        • Điều phối quy trình tuyển dụng và đào tạo nhân viên<br>
+                        • Đảm bảo tuân thủ các quy định pháp luật về lao động
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Nhân sự</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">25 - 35 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Lập trình viên Full-stack</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Đà Nẵng</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 05/05/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Phát triển và duy trì các ứng dụng web và mobile<br>
+                        • Làm việc với cả front-end và back-end technologies<br>
+                        • Đảm bảo hiệu suất, bảo mật và trải nghiệm người dùng
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Công nghệ thông tin</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">20 - 30 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="new-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Kế toán viên</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Côn Đảo</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 20/03/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Xử lý các giao dịch tài chính hàng ngày<br>
+                        • Lập và kiểm tra các báo cáo kế toán<br>
+                        • Hỗ trợ kiểm toán nội bộ và làm trợ lý cho Kế toán trưởng
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Kế toán</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">10 - 15 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="new-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Kế toán trưởng</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Quần đảo Hoàng Sa</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 20/03/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Quản lý toàn bộ hoạt động kế toán của công ty<br>
+                        • Lập và phân tích các báo cáo tài chính<br>
+                        • Đảm bảo tuân thủ các quy định pháp lý về tài chính
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Kế toán</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">23 - 35 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="new-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Chuyên viên Digital Marketing</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Quần Đảo Trường Sa</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 30/06/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Xây dựng và triển khai các chiến dịch marketing số<br>
+                        • Phân tích dữ liệu và đánh giá hiệu quả chiến dịch<br>
+                        • Tối ưu hóa các kênh marketing online
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Marketing</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">15 - 20 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-12">
+                  <div class="card-grid-2 grid-bd-16-dark hover-up">
+                    <div class="card-grid-2-image-left"><span class="new-jobs"></span>
+                      <div class="right-info">
+                        <h6><a href="#">Trưởng phòng Kinh doanh</a></h6>
+                        <span class="card-briefcase">Toàn thời gian</span>
+                        <span class="card-location">Kiên Giang</span>
+                      </div>
+                    </div>
+                    <div class="card-block-info">
+                      <span class="card-time">Thời hạn: 01/08/2025</span>
+                      <p class="font-sm color-text-paragraph mt-15">
+                        • Lãnh đạo và phát triển đội ngũ kinh doanh<br>
+                        • Xây dựng chiến lược bán hàng hiệu quả<br>
+                        • Phát triển thị trường và tăng doanh thu cho công ty
+                      </p>
+                      <div class="mt-30">
+                        <a class="btn btn-grey-small mr-5" href="#">Kinh doanh</a>
+                      </div>
+                      <div class="border-bottom pb-20"></div>
+                      <div class="apply-now-bottom mt-20">
+                        <span class="card-text-price">23 - 35 Triệu ₫</span>
+                        <div class="btn btn-apply-now" data-bs-toggle="modal" data-bs-target="#ModalApplyJobForm">
+                          Ứng tuyển</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="paginations">
+              <ul class="pager">
+                <li><a class="pager-prev" href="#"></a></li>
+                <li><a class="pager-number" href="#">1</a></li>
+                <li><a class="pager-number" href="#">2</a></li>
+                <li><a class="pager-number" href="#">3</a></li>
+                <li><a class="pager-number" href="#">4</a></li>
+                <li><a class="pager-number" href="#">5</a></li>
+                <li><a class="pager-number active" href="#">6</a></li>
+                <li><a class="pager-number" href="#">7</a></li>
+                <li><a class="pager-next" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="sidebar-shadow none-shadow mb-30">
+              <div class="sidebar-filters">
+                <div class="filter-block head-border mb-30">
+                  <h5>Bộ lọc nâng cao<a class="link-reset" href="#">Đặt lại</a></h5>
+                </div>
+                <div class="filter-block mb-30">
+                  <div class="form-group select-style select-style-icon">
+                    <select class="form-control form-icons select-active">
+                      <option value="0" disabled selected>Khu vực</option>
+                      <option value="AG">An Giang</option>
+                      <option value="BV">Bà Rịa - Vũng Tàu</option>
+                      <option value="BG">Bắc Giang</option>
+                      <option value="BK">Bắc Kạn</option>
+                      <option value="BL">Bạc Liêu</option>
+                      <option value="BN">Bắc Ninh</option>
+                      <option value="BT">Bến Tre</option>
+                      <option value="BD">Bình Định</option>
+                      <option value="BP">Bình Phước</option>
+                      <option value="BV">Bình Dương</option>
+                      <option value="BT">Bình Thuận</option>
+                      <option value="CM">Cà Mau</option>
+                      <option value="CB">Cao Bằng</option>
+                      <option value="CT">Cần Thơ</option>
+                      <option value="DN">Đà Nẵng</option>
+                      <option value="DL">Đắk Lắk</option>
+                      <option value="DK">Đắk Nông</option>
+                      <option value="DB">Điện Biên</option>
+                      <option value="DN">Đồng Nai</option>
+                      <option value="DT">Đồng Tháp</option>
+                      <option value="GL">Gia Lai</option>
+                      <option value="HG">Hà Giang</option>
+                      <option value="HN">Hà Nội</option>
+                      <option value="HT">Hà Tĩnh</option>
+                      <option value="HD">Hải Dương</option>
+                      <option value="HP">Hải Phòng</option>
+                      <option value="HB">Hòa Bình</option>
+                      <option value="HY">Hưng Yên</option>
+                      <option value="KH">Khánh Hòa</option>
+                      <option value="KG">Kiên Giang</option>
+                      <option value="KT">Kon Tum</option>
+                      <option value="LC">Lai Châu</option>
+                      <option value="LD">Lâm Đồng</option>
+                      <option value="LS">Lạng Sơn</option>
+                      <option value="LA">Long An</option>
+                      <option value="ND">Nam Định</option>
+                      <option value="NA">Nghệ An</option>
+                      <option value="NB">Ninh Bình</option>
+                      <option value="NT">Ninh Thuận</option>
+                      <option value="PT">Phú Thọ</option>
+                      <option value="PY">Phú Yên</option>
+                      <option value="QB">Quảng Bình</option>
+                      <option value="QNa">Quảng Nam</option>
+                      <option value="QNg">Quảng Ngãi</option>
+                      <option value="QN">Quảng Ninh</option>
+                      <option value="QT">Quảng Trị</option>
+                      <option value="ST">Sóc Trăng</option>
+                      <option value="SL">Sơn La</option>
+                      <option value="TN">Tây Ninh</option>
+                      <option value="TB">Thái Bình</option>
+                      <option value="TN">Thái Nguyên</option>
+                      <option value="TT">Thanh Hóa</option>
+                      <option value="TTH">Thừa Thiên Huế</option>
+                      <option value="TG">Tiền Giang</option>
+                      <option value="TV">Trà Vinh</option>
+                      <option value="TQ">Tuyên Quang</option>
+                      <option value="VL">Vĩnh Long</option>
+                      <option value="VP">Vĩnh Phúc</option>
+                      <option value="YB">Yên Bái</option>
+                      <option value="HCM">TP. Hồ Chí Minh</option>
+                    </select><i class="fi-rr-marker"></i>
+                  </div>
+                </div>
+                <div class="filter-block mb-30">
+                  <h5 class="medium-heading mb-10">Vùng miền</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Miền Bắc</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">35</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Miền Trung</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Miền Nam</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-block mb-30">
+                  <h5 class="medium-heading mb-15">Trạng thái</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Tất cả</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">180</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Việc làm Hot</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">12</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Việc làm Mới</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">23</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-block mb-30">
+                  <h5 class="medium-heading mb-25">Mức lương</h5>
+                  <div class="list-checkbox pb-20">
+                    <div class="row position-relative mt-10 mb-20">
+                      <div class="col-sm-12 box-slider-range">
+                        <div id="slider-range"></div>
+                      </div>
+                      <div class="box-input-money">
+                        <input class="input-disabled form-control min-value-money" type="text" name="min-value-money"
+                          disabled="disabled" value="">
+                        <input class="form-control min-value" type="hidden" name="min-value" value="">
+                      </div>
+                    </div>
+                    <div class="box-number-money">
+                      <div class="row mt-30">
+                        <div class="col-sm-6 col-6"><span class="font-sm color-brand-1">0₫</span></div>
+                        <div class="col-sm-6 col-6 text-end"><span class="font-sm color-brand-1">Triệu ₫</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-20">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Tất cả</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">145</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">0₫ - 10 Triệu ₫</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">10₫ - 20 Triệu ₫</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">37</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">20₫ - 30 Triệu ₫</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">75</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">30 Triệu ₫ trở lên</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">98</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-block mb-30">
+                  <h5 class="medium-heading mb-10">Vị trí</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Nhân viên</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">35</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Quản lý</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">56</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="filter-block mb-30">
+                  <h5 class="medium-heading mb-15">Loại hình công việc</h5>
+                  <div class="form-group">
+                    <ul class="list-checkbox">
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox" checked="checked"><span class="text-small">Tất cả</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">145</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Toàn thời gian</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">25</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Bán thời gian</span><span
+                            class="checkmark"></span>
+                        </label><span class="number-item">64</span>
+                      </li>
+                      <li>
+                        <label class="cb-container">
+                          <input type="checkbox"><span class="text-small">Thực tập</span><span class="checkmark"></span>
+                        </label><span class="number-item">78</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-box mt-100">
+      <div class="container">
+        <div class="text-start">
+          <h2 class="section-title mb-10 wow animate__ animate__fadeInUp animated"
+            style="visibility: visible; animation-name: fadeInUp;">🥳 Kết nối với chúng tôi</h2>
+        </div>
+        <div class="mt-70">
+          <div class="row">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+          </div>
+          <div class="card-grid-2 grid-bd-16 bg-fpt-element-contact hover-up">
+            <div class="row mb-10">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-vpgd.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="" target="_blank">Văn phòng giao
+                      dịch</a><span class="">FPT Telecom</span></div>
+                </div>
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-fb.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="https://www.facebook.com/fptjobs"
+                      target="_blank">Tuyển
+                      dụng FPT Telecom</a><span class="">Facebook</span></div>
+                </div>
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-tik.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="https://www.tiktok.com/@tuyendungfpttelecom"
+                      target="_blank">Nhà Cáo</a><span class="">Tiktok</span></div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-in.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="https://www.linkedin.com/company/fpt-telecom/"
+                      target="_blank">FPT Telecom</a><span class="">LinkedIn</span></div>
+                </div>
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-phone.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="" target="_blank">(+84) 944 665 172</a><span
+                      class="">Phone</span></div>
+                </div>
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/brands/ct-mail.svg" alt=""></div>
+                  <div class="right-info"><a class="name-job" href="" target="_blank">ftelhr.tuyendung@fpt.com</a><span
+                      class="">Email</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="banner-hero hero-2">
+        <div class="banner-inner">
+          <div class="block-banner">
+            <h3 class="text-white text-center">
+              Nhận thông báo việc làm từ FPT Telecom
+            </h3>
+            <div class="form-find mt-40 mb-40 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+              <form>
+                <div class="box-industry">
+                  <select class="form-input mr-10 select-active input-industry">
+                    <option value disabled selected>Ngành nghề</option>
+                    <option value="1">Báo chí</option>
+                    <option value="2">Truyền hình</option>
+                    <option value="3">Phần cứng</option>
+                    <option value="4">Mạng</option>
+                    <option value="5">Điện tử</option>
+                    <option value="6">Thiết kế</option>
+                  </select>
+                </div>
+                <input class="form-input input-email mr-10" type="text" placeholder="Email của bạn " />
+                <input class="form-input input-upload mr-10" type="file" placeholder="CV của bạn">
+
+                <button class="btn btn-default font-heading icon-send-letter">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-fpt-element-footer">
+    <div class="container pt-50 text-white">
+      <div class="row">
+        <div class="col-12">
+          <div class="card-grid-2 grid-bd-16-nowhite">
+            <div class="row mb-10">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/template/fpt-telecom-logo-footer.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="text-md-end pr-20 ml-20">
+                  <h5 class="mt-20">Công ty Cổ phần Viễn Thông FPT</h5>
+                  <p>Ban Nhân sự</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-6 pl-md-25 mb-20">
+            <h6 class=" mb-20">Trung tâm Thu hút Nguồn nhân lực</h6>
+            <ul class="menu-footer">
+              <li><a href="#">FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</a>
+              </li>
+              <li><a href="#">FPT Tân thuận, KCX Tân Thuận, Quận 7, TP. Hồ Chí Minh</a>
+              </li>
+              <li><a href="#">ftelhr.tuyendung@fpt.com</a></li>
+              <li><a href="#">(+84) 944 665 172</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Về chúng tôi</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Giới thiệu công ty</a></li>
+              <li><a href="#">Giới thiệu phòng ban</a></li>
+              <li><a href="#">Quy trình tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Việc làm</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Tuyển dụng Hot</a></li>
+              <li><a href="#">Tuyển dụng mới</a></li>
+              <li><a href="#">Vị trí quản lý</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Life at FTEL</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Văn hoá đặc sắc</a></li>
+              <li><a href="#">Phát triển sự nghiệp</a></li>
+              <li><a href="#">Phúc lợi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-20">
+          <div class="col-12">
+            <div class="card-grid-2">
+              <div class="row pl-15 pr-15 mb-10">
+                <div class="col-lg-7 col-md-3 col-sm-12 ">
+                  <h6 class="mt-10 ">Theo dõi các kênh chính thức</h6>
+                  <p>của FPT Telecom</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text-md-end">
+                  <h6 class="mt-10">Hỗ trợ Khách hàng</h6>
+                  <p>hotrokhachhang@fpt.com</p>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-12 text-md-end">
+                  <h6 class="mt-10">Hotline</h6>
+                  <p>1900 6600</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text-md-end">
+                  <div class="footer-social mt-20">
+                    <a class="icon-socials icon-facebook" href="https://www.facebook.com/FptTelecom/"
+                      target="_blank"></a>
+                    <a class="icon-socials icon-youtube" href="https://www.youtube.com/user/likefpt#"
+                      target="_blank"></a>
+
+                    <a class="icon-socials icon-instagram" href="https://www.instagram.com/fpt.telecom/"
+                      target="_blank"></a>
+                    <a class="icon-socials icon-zalo" href="https://zalo.me/fpttelecom" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6 pl-20 pr-20">
+              <span class="font-xs color-text-paragraph">Copyright &copy;
+                2025. Official Website của Trung tâm Thu hút Nguồn nhân lực - Ban nhân sự FPT Telecom
+              </span>
+            </div>
+            <div class="col-md-6 text-md-end pl-20 pr-20">
+              <div class="footer-social">
+                <a class="font-xs color-text-paragraph" href="#">Privacy
+                  Policy</a><a class="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp; Conditions</a><a
+                  class="font-xs color-text-paragraph" href="#">Security</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins/waypoints.js"></script>
+  <script src="assets/js/plugins/wow.js"></script>
+  <script src="assets/js/plugins/magnific-popup.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/select2.min.js"></script>
+  <script src="assets/js/plugins/isotope.js"></script>
+  <script src="assets/js/plugins/scrollup.js"></script>
+  <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+  <script src="assets/js/noUISlider.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/main.js?v=4.1"></script>
+  <script src="assets/js/plugins/counterup.js"></script>
+</body>
+
+</html>
