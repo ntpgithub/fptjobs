@@ -1991,7 +1991,7 @@ label {
   line-height: 18px;
 }
 .card-grid-2.grid-bd-16 .card-block-info .card-text-price {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
 }
 .card-grid-2.grid-bd-16-dark {
@@ -2033,7 +2033,7 @@ label {
   line-height: 18px;
 }
 .card-grid-2.grid-bd-16-dark .card-block-info .card-text-price {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 16px;
 }
 .card-grid-2 .card-grid-2-image {
@@ -2739,7 +2739,7 @@ label {
   border-bottom: 1px solid #e0e6f7;
 }
 .card-list-4 .image {
-  min-width: 60px;
+  width: 100 px;
   padding-right: 10px;
 }
 .card-list-4 .info-text {
@@ -2831,10 +2831,20 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-fpt-element-contact {
-  background-image: url(../imgs/page/homepage1/fpt-right-element.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  background-position: bottom -110px right;
+  background-image: url(../imgs/fox/3.gif),
+    url(../imgs/page/homepage1/fpt-right-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 10%, 30%;
+  background-position: bottom 20px right 100px, bottom -110px right;
+}
+
+@media (max-width: 768px) {
+  /* Điều chỉnh kích thước tùy theo breakpoint bạn muốn */
+  .bg-fpt-element-contact {
+    background-image: url(../imgs/page/homepage1/fpt-right-element.png); /* Chỉ giữ lại ảnh còn lại */
+    background-size: 30%;
+    background-position: bottom -110px right;
+  }
 }
 
 .bg-fpt-element-footer {
@@ -2854,6 +2864,16 @@ ul li:last-child .card-list-4 {
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: top left -160px;
+}
+
+@media (max-width: 1440px) {
+  /* Điều chỉnh kích thước tùy theo breakpoint bạn muốn */
+  .bg-fpt-element-left {
+    background-image: url(../imgs/page/homepage1/fpt-left-element.png);
+    background-repeat: no-repeat;
+    background-size: 0%;
+    background-position: top left -160px;
+  }
 }
 
 .card-category {
@@ -3473,8 +3493,11 @@ ul li:last-child .card-list-4 {
   padding: 20px 0px 20px 0px;
 }
 .banner-hero.banner-image-single img {
-  width: 100%;
   border-radius: 16px;
+  width: 100%; /* Chiều rộng 100% */
+  height: 30vh; /* Chiều cao 40% của viewport */
+  object-fit: cover; /* Cắt ảnh để vừa kích thước khung */
+  object-position: center; /* Căn giữa ảnh */
 }
 .banner-hero.banner-company {
   padding: 40px 20px 60px 20px;
@@ -3488,35 +3511,38 @@ ul li:last-child .card-list-4 {
 .banner-hero.banner-single {
   padding: 40px 20px 60px 20px;
   background: #f2f6fd;
-
   border-radius: 16px;
   position: relative;
 }
-.banner-hero.banner-single::after {
+.banner-single-img {
+  height: 170px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+/* .banner-hero.banner-single::after {
   content: "";
   position: absolute;
-  bottom: 1px;
+  bottom: 75px;
   right: 5px;
   height: 170px;
   width: 213px;
-  /* background: url(../imgs/page/job-single/right-job-head.svg) no-repeat left
-    bottom; */
+  background: url(../imgs/fox/12.gif) no-repeat left bottom;
   background-size: contain;
 }
 .banner-hero.banner-single::before {
   content: "";
   position: absolute;
-  bottom: 1px;
-  left: -3px;
+  bottom: 75px;
+  left: 75px;
   height: 170px;
   width: 218px;
-  /* background: url(../imgs/page/job-single/left-job-head.svg) no-repeat left
-    bottom; */
+  background: url(../imgs/fox/6.gif) no-repeat left bottom;
   background-size: contain;
   display: inline;
   top: auto;
   right: auto;
-}
+} */
+
 .banner-hero.hero-2 {
   position: relative;
   width: 100%;
@@ -3568,7 +3594,7 @@ ul li:last-child .card-list-4 {
   width: 100%;
   padding: 100px 0px 80px 0px;
   max-width: 100%;
-  background: url(../imgs/template/ftel.webp) no-repeat center;
+  background: url(../imgs/template/ftel-banner.webp) no-repeat center;
   background-size: cover;
 }
 .banner-hero.hero-4::before {
@@ -7317,7 +7343,9 @@ ul li:last-child .card-list-4 {
 .box-map {
   display: inline-block;
   width: 100%;
-  margin-bottom: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: thin solid #e0e6f7;
 }
 
 .ul-disc {
@@ -8120,8 +8148,9 @@ ul li:last-child .card-list-4 {
 }
 .box-image-job .img-job-2 {
   position: absolute;
-  bottom: -170px;
-  right: -80px;
+  bottom: -50px;
+  right: 0;
+  max-height: 50%;
 }
 
 .overflow-visible {
