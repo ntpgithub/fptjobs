@@ -824,6 +824,18 @@ iframe {
   background-color: #01943c !important;
 }
 
+.bg-pink-brand {
+  background-color: #ff2156 !important;
+}
+
+.bg-orange2-brand {
+  background-color: #ee4723 !important;
+}
+
+.bg-black-brand {
+  background-color: #414142 !important;
+}
+
 .bg-9 {
   background-color: #eff7ff !important;
 }
@@ -1106,7 +1118,7 @@ h6,
   padding: 18px 25px;
   background: #05264e;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .btn-brand-1:hover {
   background-color: #3c65f5;
@@ -2469,7 +2481,7 @@ label {
   overflow: hidden;
   margin-bottom: 0px;
   background: #ffffff;
-  height: 512px;
+  height: auto;
 }
 .card-grid-3:hover {
   box-shadow: 0px 10px 20px -5px rgba(10, 42, 105, 0.06);
@@ -2815,12 +2827,78 @@ ul li:last-child .card-list-4 {
   background-position: bottom right, center;
 }
 
+.bg-image-blue-product {
+  background-image: url(../imgs/page/homepage1/img-blue-product.png),
+    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.bg-image-orange-product {
+  background-image: url(../imgs/page/homepage1/img-orange-product.png),
+    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.bg-image-green-product {
+  background-image: url(../imgs/page/homepage1/img-green-product.png),
+    url(../imgs/page/homepage1/bg-green-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.bg-image-pink-product {
+  background-image: url(../imgs/page/homepage1/img-pink-product.png),
+    url(../imgs/page/homepage1/bg-pink-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.bg-image-orange2-product {
+  background-image: url(../imgs/page/homepage1/img-orange2-product.png),
+    url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.bg-image-black-product {
+  background-image: url(../imgs/page/homepage1/img-black-product.png),
+    url(../imgs/page/homepage1/bg-black-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: bottom right, center;
+}
+
+.fpt-banner {
+  overflow: hidden;
+}
+
+.fpt-element {
+  z-index: -1;
+  position: absolute;
+  right: 0px;
+  width: 350px;
+}
+
 .bg-fpt-element {
   background-image: url(../imgs/page/homepage1/fpt-right-element.png),
     url(../imgs/page/homepage1/fpt-left-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-position: top right -120px, bottom -100px left -140px;
+}
+.bg-fpt-element-reverse {
+  background-image: url(../imgs/page/homepage1/fpt-right-element.png),
+    url(../imgs/page/homepage1/fpt-left-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, 20%;
+  background-position: bottom right -120px, top left -140px;
 }
 .bg-fpt-element-process {
   background-image: url(../imgs/page/homepage1/fpt-right-element.png),
@@ -3221,11 +3299,20 @@ ul li:last-child .card-list-4 {
   padding: 0;
 }
 
+#lien-he {
+  scroll-margin-top: 250px; /* Cách top 200px khi cuộn đến */
+}
+
+#tham-quan-cong-ty {
+  scroll-margin-top: 250px; /* Cách top 200px khi cuộn đến */
+}
+
 .breacrumb-cover {
   background-color: #f8faff;
   background-image: url(../imgs/page/blog/bg-breadcrumb.png);
   background-position: top center;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .breadcrumbs {
@@ -3289,6 +3376,14 @@ ul li:last-child .card-list-4 {
 
 .w-lg-50 {
   width: 50%;
+}
+.w-lg-70 {
+  width: 70%;
+}
+.fox-banner {
+  width: 200px;
+  position: relative;
+  left: 20px;
 }
 
 .banner-hero {
@@ -6720,7 +6815,7 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-img-about {
-  background: url(../imgs/page/about/img-about.png) no-repeat top center;
+  background: url(../imgs/template/ftel.webp) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -6737,6 +6832,7 @@ ul li:last-child .card-list-4 {
   height: 100%;
   width: 100%;
   background: url(../imgs/page/about/bg-black-trans.png) repeat-x bottom left;
+  background-size: cover;
 }
 .bg-img-about h2,
 .bg-img-about p {
