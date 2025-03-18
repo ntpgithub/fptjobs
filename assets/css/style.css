@@ -361,7 +361,7 @@ input[type="number"]:focus,
 }
 
 .hover-zoom:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .none-shadow {
@@ -2875,6 +2875,302 @@ ul li:last-child .card-list-4 {
   background-position: bottom right, center;
 }
 
+/**/
+.bg-image-blue-culture {
+  background-image: url(../imgs/page/homepage1/img-blue-culture.png),
+    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-image-orange-culture {
+  background-image: url(../imgs/page/homepage1/img-orange-culture.png),
+    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-image-green-culture {
+  background-image: url(../imgs/page/homepage1/img-green-culture.png),
+    url(../imgs/page/homepage1/bg-green-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-image-pink-culture {
+  background-image: url(../imgs/page/homepage1/img-pink-culture.png),
+    url(../imgs/page/homepage1/bg-pink-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-image-orange2-culture {
+  background-image: url(../imgs/page/homepage1/img-orange2-culture.png),
+    url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
+
+.bg-image-black-culture {
+  background-image: url(../imgs/page/homepage1/img-black-culture.png),
+    url(../imgs/page/homepage1/bg-black-element.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: right, center;
+}
+
+/**/
+.bg-image-blue-none {
+  background-image: url(../imgs/page/homepage1/bg-blue-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-orange-none {
+  background-image: url(../imgs/page/homepage1/bg-orange-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-green-none {
+  background-image: url(../imgs/page/homepage1/bg-green-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-pink-none {
+  background-image: url(../imgs/page/homepage1/bg-pink-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-orange2-none {
+  background-image: url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image-black-none {
+  background-image: url(../imgs/page/homepage1/bg-black-element.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/**/
+.card-culture-1 {
+  position: relative;
+}
+
+.card-culture-1::after {
+  content: "Tôn trọng - FPT tạo môi trường cởi mở, nơi mọi người được lắng nghe, thể hiện quan điểm và phát triển tối đa, không phân biệt vị trí hay quan hệ.";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-1:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+.card-culture-2 {
+  position: relative;
+}
+
+.card-culture-2::after {
+  content: "Đổi mới – FPT tạo điều kiện cho mọi thành viên học tập suốt đời, đồng thời tiếp thu cái mới, đầu tư nghiên cứu và thúc đẩy sáng tạo để dẫn đầu.";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-2:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+.card-culture-3 {
+  position: relative;
+}
+
+.card-culture-3::after {
+  content: "Đồng đội – FPT là một đại gia đình, nơi mỗi thành viên gắn kết, sẻ chia, đồng hành vượt qua mọi thử thách, cùng nhau sát cánh vì mục tiêu chung.";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-3:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+.card-culture-4 {
+  position: relative;
+}
+
+.card-culture-4::after {
+  content: "Chí công – FPT đề cao chính trực, công bằng, minh bạch, đặt lợi ích tổ chức lên hàng đầu, mọi quyết định không thiên vị, không phụ thuộc thân sơ.";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-4:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+.card-culture-5 {
+  position: relative;
+}
+
+.card-culture-5::after {
+  content: "Gương mẫu – Lãnh đạo FPT tiên phong, làm gương, truyền cảm hứng, sẵn sàng xông pha cùng nhân viên và thể hiện rõ tinh thần “Tôn trọng - Đổi mới - Đồng đội”.";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-5:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**/
+.card-culture-6 {
+  position: relative;
+}
+
+.card-culture-6::after {
+  content: "Sáng suốt – FPT yêu cầu lãnh đạo phải có tầm nhìn xa và tính quyết đoán. Luôn hỗ trợ nhân viên, đưa ra quyết định chính xác, kịp thời, định hướng chiến lược dài hạn. ";
+  position: absolute;
+  bottom: 10%; /* Hiển thị phía trên */
+  right: -130px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  width: 300px; /* Giới hạn chiều rộng */
+  text-align: right;
+  white-space: pre-wrap; /* Cho phép xuống dòng */
+  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* 🎨 Hiệu ứng Blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card-culture-6:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .fpt-banner {
   overflow: hidden;
 }
@@ -2892,6 +3188,13 @@ ul li:last-child .card-list-4 {
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-position: top right -120px, bottom -100px left -140px;
+}
+.bg-gen-fpt-element {
+  background-image: url(../imgs/page/homepage1/gen-fpt.svg),
+    url(../imgs/page/homepage1/gen-fpt.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 50%, 50%;
+  background-position: left -500px center, right -500px center;
 }
 .bg-fpt-element-reverse {
   background-image: url(../imgs/page/homepage1/fpt-right-element.png),
@@ -3300,11 +3603,11 @@ ul li:last-child .card-list-4 {
 }
 
 #lien-he {
-  scroll-margin-top: 250px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
 }
 
 #tham-quan-cong-ty {
-  scroll-margin-top: 250px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
 }
 
 .breacrumb-cover {
@@ -3643,8 +3946,7 @@ ul li:last-child .card-list-4 {
   width: 100%;
   padding: 100px 0px 80px 0px;
   max-width: 100%;
-  background: url(../imgs/template/banner-test.gif) no-repeat top center;
-  background-size: cover;
+  background-color: #05264e;
 }
 .banner-hero.hero-2::before {
   content: "";
@@ -6662,7 +6964,7 @@ ul li:last-child .card-list-4 {
   max-width: 85%;
 }
 
-.block-pricing .box-pricing-item {
+.block-benefit .box-benefit-item {
   display: inline-block;
   width: 100%;
   padding: 44px;
@@ -6670,39 +6972,39 @@ ul li:last-child .card-list-4 {
   border-radius: 8px;
   margin-bottom: 30px;
 }
-.block-pricing .box-pricing-item:hover {
+.block-benefit .box-benefit-item:hover {
   box-shadow: 0px 10px 20px -5px rgba(10, 42, 105, 0.06);
 }
-.block-pricing .box-pricing-item:hover .btn-border {
+.block-benefit .box-benefit-item:hover .btn-border {
   background-color: #3c65f5;
   color: #ffffff;
 }
-.block-pricing .box-pricing-item .for-year,
-.block-pricing .box-pricing-item .for-month {
+.block-benefit .box-benefit-item .for-year,
+.block-benefit .box-benefit-item .for-month {
   display: none;
 }
-.block-pricing .box-pricing-item .display-month {
+.block-benefit .box-benefit-item .display-month {
   display: inline-block;
 }
-.block-pricing .box-pricing-item .display-year {
+.block-benefit .box-benefit-item .display-year {
   display: inline-block;
 }
-.block-pricing .box-pricing-item .btn-border {
+.block-benefit .box-benefit-item .btn-border {
   border: 1px solid #3c65f5;
   color: #3c65f5;
   width: 100%;
 }
-.block-pricing .box-pricing-item .btn-border:hover {
+.block-benefit .box-benefit-item .btn-border:hover {
   background-color: #3c65f5;
   color: #ffffff;
 }
-.block-pricing .box-info-price {
+.block-benefit .box-info-price {
   display: inline-block;
   width: 100%;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-.block-pricing .box-info-price .text-price {
+.block-benefit .box-info-price .text-price {
   font-size: 56px;
   color: #3c65f5;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -6710,22 +7012,22 @@ ul li:last-child .card-list-4 {
   font-weight: 800;
   margin-right: 1px;
 }
-.block-pricing .box-info-price .text-month {
+.block-benefit .box-info-price .text-month {
   font-size: 18px;
   line-height: 26px;
   color: #a0abb8;
 }
-.block-pricing .text-desc-package {
+.block-benefit .text-desc-package {
   font-size: 15px;
   line-height: 20px;
   color: #4f5e64;
 }
-.block-pricing .list-package-feature {
+.block-benefit .list-package-feature {
   display: inline-block;
   width: 100%;
   padding-bottom: 30px;
 }
-.block-pricing .list-package-feature li {
+.block-benefit .list-package-feature li {
   display: inline-block;
   width: 100%;
   padding: 4px 0px 4px 35px;
@@ -6735,25 +7037,25 @@ ul li:last-child .card-list-4 {
   line-height: 20px;
   color: #4f5e64;
 }
-.block-pricing .most-popular {
+.block-benefit .most-popular {
   margin-top: -50px;
   background-size: contain;
   border-radius: 26px;
   padding: 20px 30px 44px 30px;
 }
-.block-pricing .most-popular .text-price,
-.block-pricing .most-popular .text-month,
-.block-pricing .most-popular h4,
-.block-pricing .most-popular .text-desc-package {
+.block-benefit .most-popular .text-price,
+.block-benefit .most-popular .text-month,
+.block-benefit .most-popular h4,
+.block-benefit .most-popular .text-desc-package {
   color: #ffffff;
 }
-.block-pricing .most-popular .btn-border {
+.block-benefit .most-popular .btn-border {
   font-weight: bold;
   color: #05264e;
   width: 100%;
   text-align: center;
 }
-.block-pricing .most-popular .btn-white-sm {
+.block-benefit .most-popular .btn-white-sm {
   border-radius: 14px;
   text-transform: uppercase;
   padding: 9px 25px 7px 25px;
@@ -8671,12 +8973,41 @@ ul li:last-child .card-list-4 {
 .block-banner-3 {
   padding: 0px 10px;
 }
+
 .block-banner-1 img,
 .block-banner-2 img,
 .block-banner-3 img {
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 100%;
+  filter: grayscale(50%) sepia(50%);
+}
+
+.block-banner-1 img:hover,
+.block-banner-2 img:hover,
+.block-banner-3 img:hover {
+  filter: grayscale(0%);
+  transition: opacity 0.3s ease-in-out;
+}
+.block-image-1,
+.block-image-2,
+.block-image-3,
+.block-image-4,
+.block-image-5,
+.block-image-6 {
+  position: relative;
+}
+
+.block-image-text {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  transform: translateY(-50%);
 }
 
 .banner-homepage6 {
@@ -8912,7 +9243,7 @@ ul li:last-child .card-list-4 {
   .box-info-job .mt-50 {
     margin-top: 0px !important;
   }
-  .block-pricing .most-popular {
+  .block-benefit .most-popular {
     margin-top: 0 !important;
   }
   .job-fillter {
@@ -9264,7 +9595,7 @@ ul li:last-child .card-list-4 {
   .nav-right li {
     margin-bottom: 15px;
   }
-  .block-pricing.mt-125 {
+  .block-benefit.mt-125 {
     margin-top: 50px !important;
   }
   .box-filters .list-tags-job {
