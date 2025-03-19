@@ -3212,10 +3212,10 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-fpt-element-contact {
-  background-image: url(../imgs/fox/3.gif),
+  background-image: url(../imgs/fox/3.png),
     url(../imgs/page/homepage1/fpt-right-element.png);
   background-repeat: no-repeat, no-repeat;
-  background-size: 10%, 30%;
+  background-size: 15%, 30%;
   background-position: bottom 20px right 100px, bottom -110px right;
 }
 
@@ -3607,6 +3607,18 @@ ul li:last-child .card-list-4 {
 }
 
 #tham-quan-cong-ty {
+  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+}
+
+#van-hoa {
+  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+}
+
+#phat-trien-su-nghiep {
+  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+}
+
+#phuc-loi {
   scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
 }
 
@@ -4839,7 +4851,7 @@ ul li:last-child .card-list-4 {
   top: 7px;
   right: 15px;
   display: none;
-  z-index: 999999;
+  z-index: 9999;
 }
 .burger-icon > span {
   display: block;
@@ -4857,11 +4869,7 @@ ul li:last-child .card-list-4 {
 .burger-icon > span.burger-icon-mid {
   top: 9px;
 }
-.burger-icon.burger-close {
-  position: fixed;
-  top: 21px !important;
-  right: 15px;
-}
+
 .burger-icon.burger-close > span.burger-icon-top {
   display: none;
   opacity: 0;
@@ -8547,7 +8555,7 @@ ul li:last-child .card-list-4 {
 .box-image-job .img-job-2 {
   position: absolute;
   bottom: -50px;
-  right: 0;
+  right: 50px;
   max-height: 50%;
 }
 

@@ -28,64 +28,156 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="ModalApplyJobForm" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+  <div class="modal fade" id="ModalLogin" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
       <div class="modal-content apply-job-form">
         <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         <div class="modal-body pl-30 pr-30 pt-50">
           <div class="text-center">
-            <p class="font-sm text-brand-2">Job Application</p>
+            <p class="font-sm text-brand-2">Đăng nhập</p>
             <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
-              Start your career today
+              Chào mừng bạn
             </h2>
             <p class="font-sm text-muted mb-30">
-              Please fill in your information and send it to the employer.
+              Bước vào thế giới việc làm! Cơ hội đang chờ! <br>
+              Bạn đã sẵn sàng chinh phục thử thách chưa?
             </p>
           </div>
           <form class="login-register text-start mt-20 pb-30" action="#">
+            <button class="btn social-login hover-up mb-20">
+              <img src="assets/imgs/template/icons/icon-google.svg" alt="Google" /><strong>Đăng nhập với
+                Google</strong>
+            </button>
+            <button class="btn social-login hover-up mb-20">
+              <img src="assets/imgs/template/icons/icon-linkedin.svg" alt="linkedin" /><strong>Đăng nhập với
+                Linkedin</strong>
+            </button>
+          </form>
+          <div class="divider-text-center">
+            <span>Hoặc đăng nhập với</span>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
             <div class="form-group">
-              <label class="form-label" for="input-1">Full Name *</label>
-              <input class="form-control" id="input-1" type="text" required name="fullname" placeholder="Steven Job" />
+              <label class="form-label" for="input-1">Địa chỉ Email *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="fullname"
+                placeholder="kickstart-career@fpt.com" />
             </div>
             <div class="form-group">
-              <label class="form-label" for="input-2">Email *</label>
-              <input class="form-control" id="input-2" type="email" required name="emailaddress"
-                placeholder="stevenjob@gmail.com" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="number">Contact Number *</label>
-              <input class="form-control" id="number" type="text" required name="phone"
-                placeholder="(+01) 234 567 89" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="des">Description</label>
-              <input class="form-control" id="des" type="text" required name="Description"
-                placeholder="Your description..." />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="file">Upload Resume</label>
-              <input class="form-control" id="file" name="resume" type="file" />
+              <label class="form-label" for="input-4">Mật khẩu *</label>
+              <input class="form-control" id="input-4" type="password" required="" name="password"
+                placeholder="************" />
             </div>
             <div class="login_footer form-group d-flex justify-content-between">
               <label class="cb-container">
-                <input type="checkbox" /><span class="text-small">Agree our
-                  terms and policy</span><span class="checkmark"></span>
-              </label><a class="text-muted" href="page-contact.html">Lean more</a>
+                <input type="checkbox" /><span class="text-small">Ghi nhớ đăng nhập</span><span
+                  class="checkmark"></span>
+              </label><a class="text-muted" style="cursor: pointer;" onclick="swapModaltoPassword()">Quên mật
+                khẩu</a>
             </div>
             <div class="form-group">
-              <button class="btn btn-default hover-up w-100" type="submit" name="login">
-                Apply Job
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="login">
+                Đăng nhập
               </button>
             </div>
             <div class="text-muted text-center">
-              Do you need support? <a href="page-contact.html">Contact Us</a>
+              Bạn chưa có tài khoản?
+              <a class="" style="cursor: pointer;" onclick="swapModaltoRegister()">Đăng ký ngay</a>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-  <header class="header sticky-bar">
+  <div class="modal fade" id="ModalRegister" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Đăng ký</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Khai phóng sự nghiệp
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Điểm khởi đầu của những giấc mơ lớn!
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Chúng tôi sẽ gọi bạn là gì ? *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="fullname"
+                placeholder="Họ và tên" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-2">Địa chỉ Email *</label>
+              <input class="form-control" id="input-2" type="text" required="" name="fullname"
+                placeholder="kickstart-career@fpt.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-3">Mật khẩu *</label>
+              <input class="form-control" id="input-3" type="password" required="" name="password"
+                placeholder="************" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-4">Nhập lại Mật khẩu *</label>
+              <input class="form-control" id="input-4" type="password" required="" name="re-password"
+                placeholder="************" />
+            </div>
+            <div class="login_footer form-group d-flex justify-content-between">
+              <label class="cb-container">
+                <input type="checkbox"><span class="text-small">Đồng ý với các điều khoản và chính sách của chúng
+                  tôi</span><span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="login">
+                Đăng ký
+              </button>
+            </div>
+            <div class="text-muted text-center">
+              Bạn đã có tài khoản?
+              <a class="" style="cursor: pointer;" onclick="swapModaltoLogin1()">Đăng nhập
+                ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalPassword" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Quên mật khẩu</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Đặt lại mật khẩu
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Nhập địa chỉ email được liên kết với tài khoản của bạn và chúng tôi sẽ gửi cho bạn một liên kết để đặt lại
+              mật khẩu của
+              bạn.
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Địa chỉ Email *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="emaill"
+                placeholder="kickstart-career@fpt.com">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="continue">Tiếp tục</button>
+            </div>
+            <div class="text-muted text-center">Bạn chưa có tài khoản? <a class="" style="cursor: pointer;"
+                onclick="swapModaltoLogin2()">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class=" header sticky-bar">
     <div class="container">
       <div class="main-header">
         <div class="header-left">
@@ -103,26 +195,26 @@
               <li class="has-children">
                 <a href="/page-about.html">Về chúng tôi</a>
                 <ul class="sub-menu">
-                  <li><a href="/page-about.html#gioi-thieu-cong-ty">Giới thiệu công ty</a></li>
+                  <li><a href="/page-about.html">Giới thiệu công ty</a></li>
                   <li><a href="/page-about.html#lien-he">Thông tin liên hệ</a></li>
                   <li><a href="/page-about.html#tham-quan-cong-ty">Tham quan công ty</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="#">Life at FTEL</a>
+                <a href="/lifeat-ftel.html">Life at FTEL</a>
                 <ul class="sub-menu">
-                  <li><a href="#">Hoạt động</a></li>
-                  <li><a href="#">Văn hóa đặc sắc</a></li>
-                  <li><a href="#">Phát triển sự nghiệp</a></li>
-                  <li><a href="#">Phúc lợi</a></li>
+                  <li><a href="/lifeat-ftel.html">Hoạt động</a></li>
+                  <li><a href="/lifeat-ftel.html#van-hoa">Văn hóa đặc sắc</a></li>
+                  <li><a href="/lifeat-ftel.html#phat-trien-su-nghiep">Phát triển sự nghiệp</a></li>
+                  <li><a href="/lifeat-ftel.html#phuc-loi">Phúc lợi</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="#">Tin tức & Sự kiện</a>
+                <a href="/news.html">Tin tức & Sự kiện</a>
                 <ul class="sub-menu">
-                  <li><a href="#">Tin tức</a></li>
-                  <li><a href="#">SV Tài năng</a></li>
-                  <li><a href="#">SV Công nghệ Tập sự</a></li>
+                  <li><a href="/news.html">Tin tức</a></li>
+                  <li><a href="https://fptjobs.com/Nextgen-Leaders" target="_blank">SV Tài năng</a></li>
+                  <li><a href="https://fptjobs.com/SVCNTS2024" target="_blank">SV Công nghệ Tập sự</a></li>
                 </ul>
               </li>
             </ul>
@@ -134,79 +226,26 @@
         </div>
         <div class="header-right">
           <div class="block-signin">
-            <a class="text-link-bd-btom hover-up" href="page-register.html">Đăng ký</a>
-            <a class="btn btn-default btn-shadow ml-30 hover-up" href="page-signin.html">Đăng nhập</a>
+            <a class="text-link-bd-btom hover-up" style="cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#ModalRegister">Đăng ký</a>
+            <a class="btn btn-default btn-shadow ml-30 hover-up" data-bs-toggle="modal"
+              data-bs-target="#ModalLogin">Đăng
+              nhập</a>
           </div>
         </div>
       </div>
     </div>
   </header>
-  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar" style="z-index: 9999;">
-    <div class="mobile-header-wrapper-inner">
-      <div class="mobile-header-content-area">
-        <div class="perfect-scroll">
-          <div class="mobile-search mobile-header-border mb-30">
-            <form action="#">
-              <input type="text" placeholder="Search…" /><i class="fi-rr-search"></i>
-            </form>
-          </div>
-          <div class="mobile-menu-wrap mobile-header-border">
-            <!-- mobile menu start-->
-            <nav>
-              <ul class="mobile-menu font-heading">
-                <li class>
-                  <a href="/jobs-grid.html">Cơ hội Việc làm</a>
-                </li>
-                <li class="has-children">
-                  <a href="#">Về chúng tôi</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Giới thiệu công ty</a></li>
-                    <li><a href="#">Thông tin liên hệ</a></li>
-                    <li><a href="#">Tham quan công ty</a></li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a href="#">Life at FTEL</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Hoạt động</a></li>
-                    <li><a href="#">Văn hóa đặc sắc</a></li>
-                    <li><a href="#">Phát triển sự nghiệp</a></li>
-                    <li><a href="#">Phúc lợi</a></li>
-                  </ul>
-                </li>
-                <li class="has-children">
-                  <a href="#">Tin tức & Sự kiện</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Sinh viên Tài năng</a></li>
-                    <li><a href="#">Sinh viên Công nghệ Tập sự</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="mobile-account">
-            <h6 class="mb-10">Tài khoản</h6>
-            <ul class="mobile-menu font-heading">
-              <li><a href="#">Thông tin cá nhân</a></li>
-              <li><a href="#">Đã ứng tuyển</a></li>
-              <li><a href="#">Đang theo dõi</a></li>
-              <li><a href="#">Câu hỏi thường gặp</a></li>
-              <li><a href="page-signin.html">Đăng xuất</a></li>
-            </ul>
-          </div>
-          <div class="site-copyright">
-            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB ft
-            FTEL.HRIS
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
     <div class="mobile-header-wrapper-inner">
       <div class="mobile-header-content-area">
-        <div class="perfect-scroll">
+        <div class="perfect-scroll mt-60">
+          <div class="mobile-header-border mb-30">
+            <a class="btn btn-default btn-shadow  hover-up" data-bs-toggle="modal" data-bs-target="#ModalLogin">Đăng
+              nhập</a>
+            <a class="text-link-bd-btom ml-30 hover-up" style="cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#ModalRegister">Đăng ký</a>
+          </div>
           <div class="mobile-menu-wrap mobile-header-border">
             <!-- mobile menu start-->
             <nav>
@@ -253,7 +292,7 @@
             </ul>
           </div>
           <div class="site-copyright">
-            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB ft
+            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB, FTEL.DSC ft
             FTEL.HRIS
           </div>
         </div>
@@ -265,7 +304,7 @@
       <div class="container ">
         <div class="row banner-hero banner-single">
           <div class="col-xl-2 text-center ">
-            <img class="banner-single-img" src="/assets/imgs/fox/6.gif">
+            <img class="banner-single-img" src="/assets/imgs/fox/10.png">
           </div>
           <div class="col-xl-8">
             <div class="block-banner text-center ">
