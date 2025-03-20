@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="msapplication-TileColor" content="#0E0E0E" />
+  <meta name="template-color" content="#0E0E0E" />
+  <link rel="manifest" href="manifest.json" crossorigin />
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="description" content="Index page" />
+  <meta name="keywords" content="index, page" />
+  <meta name="author" content />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/template/favicon.svg" />
+  <link href="assets/css/style.css?version=4.1" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Tuyển dụng FPT Telecom</title>
+</head>
+
+<body>
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="text-center">
+          <img src="assets/imgs/template/loading.gif" alt="-" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalLogin" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Đăng nhập</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Chào mừng bạn
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Bước vào thế giới việc làm! Cơ hội đang chờ! <br>
+              Bạn đã sẵn sàng chinh phục thử thách chưa?
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 pb-30" action="#">
+            <button class="btn social-login hover-up mb-20">
+              <img src="assets/imgs/template/icons/icon-google.svg" alt="Google" /><strong>Đăng nhập với
+                Google</strong>
+            </button>
+            <button class="btn social-login hover-up mb-20">
+              <img src="assets/imgs/template/icons/icon-linkedin.svg" alt="linkedin" /><strong>Đăng nhập với
+                Linkedin</strong>
+            </button>
+          </form>
+          <div class="divider-text-center">
+            <span>Hoặc đăng nhập với</span>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Địa chỉ Email *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="fullname"
+                placeholder="kickstart-career@fpt.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-4">Mật khẩu *</label>
+              <input class="form-control" id="input-4" type="password" required="" name="password"
+                placeholder="************" />
+            </div>
+            <div class="login_footer form-group d-flex justify-content-between">
+              <label class="cb-container">
+                <input type="checkbox" /><span class="text-small">Ghi nhớ đăng nhập</span><span
+                  class="checkmark"></span>
+              </label><a class="text-muted" style="cursor: pointer;" onclick="swapModaltoPassword()">Quên mật
+                khẩu</a>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="login">
+                Đăng nhập
+              </button>
+            </div>
+            <div class="text-muted text-center">
+              Bạn chưa có tài khoản?
+              <a class="" style="cursor: pointer;" onclick="swapModaltoRegister()">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalRegister" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Đăng ký</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Khai phóng sự nghiệp
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Điểm khởi đầu của những giấc mơ lớn!
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Chúng tôi sẽ gọi bạn là gì ? *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="fullname"
+                placeholder="Họ và tên" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-2">Địa chỉ Email *</label>
+              <input class="form-control" id="input-2" type="text" required="" name="fullname"
+                placeholder="kickstart-career@fpt.com" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-3">Mật khẩu *</label>
+              <input class="form-control" id="input-3" type="password" required="" name="password"
+                placeholder="************" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-4">Nhập lại Mật khẩu *</label>
+              <input class="form-control" id="input-4" type="password" required="" name="re-password"
+                placeholder="************" />
+            </div>
+            <div class="login_footer form-group d-flex justify-content-between">
+              <label class="cb-container">
+                <input type="checkbox"><span class="text-small">Đồng ý với các điều khoản và chính sách của chúng
+                  tôi</span><span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="login">
+                Đăng ký
+              </button>
+            </div>
+            <div class="text-muted text-center">
+              Bạn đã có tài khoản?
+              <a class="" style="cursor: pointer;" onclick="swapModaltoLogin1()">Đăng nhập
+                ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalPassword" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Quên mật khẩu</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Đặt lại mật khẩu
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Nhập địa chỉ email được liên kết với tài khoản của bạn và chúng tôi sẽ gửi cho bạn một liên kết để đặt lại
+              mật khẩu của
+              bạn.
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Địa chỉ Email *</label>
+              <input class="form-control" id="input-1" type="text" required="" name="emaill"
+                placeholder="kickstart-career@fpt.com">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="continue">Tiếp tục</button>
+            </div>
+            <div class="text-muted text-center">Bạn chưa có tài khoản? <a class="" style="cursor: pointer;"
+                onclick="swapModaltoLogin2()">Đăng ký ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="ModalRePassword" style="z-index: 99999;" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content apply-job-form">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body pl-30 pr-30 pt-50">
+          <div class="text-center">
+            <p class="font-sm text-brand-2">Thay đổi mật khẩu</p>
+            <h2 class="mt-10 mb-5 text-brand-1 text-capitalize">
+              Đặt lại mật khẩu
+            </h2>
+            <p class="font-sm text-muted mb-30">
+              Nhập mật khẩu tài khoản của bạn và chúng tôi sẽ cài đặt mật khẩu mới giúp bạn.
+            </p>
+          </div>
+          <form class="login-register text-start mt-20 mb-40" action="#">
+            <div class="form-group">
+              <label class="form-label" for="input-1">Mật khẩu cũ *</label>
+              <input class="form-control" id="input-1" type="password" required="" name="emaill" placeholder="********">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-1">Mật khẩu mới *</label>
+              <input class="form-control" id="input-1" type="password" required="" name="emaill" placeholder="********">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="input-1">Nhập lại mật khẩu mới *</label>
+              <input class="form-control" id="input-1" type="password" required="" name="emaill" placeholder="********">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-brand-1 hover-up w-100" type="submit" name="continue">Xác nhận</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class=" header sticky-bar">
+    <div class="container">
+      <div class="main-header">
+        <div class="header-left">
+          <div class="header-logo">
+            <a class="d-flex" href="index.html"><img alt="-"
+                src="assets/imgs/template/fpt-telecom-ngang-logo.svg" /></a>
+          </div>
+        </div>
+        <div class="header-nav">
+          <nav class="nav-main-menu">
+            <ul class="main-menu">
+              <li>
+                <a href="/jobs-grid.html">Việc làm</a>
+              </li>
+              <li class="has-children">
+                <a href="/about.html">Về chúng tôi</a>
+                <ul class="sub-menu">
+                  <li><a href="/about.html">Giới thiệu công ty</a></li>
+                  <li><a href="/about.html#lien-he">Thông tin liên hệ</a></li>
+                  <li><a href="/about.html#tham-quan-cong-ty">Tham quan công ty</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="/lifeat-ftel.html">Life at FTEL</a>
+                <ul class="sub-menu">
+                  <li><a href="/lifeat-ftel.html">Hoạt động</a></li>
+                  <li><a href="/lifeat-ftel.html#van-hoa">Văn hóa đặc sắc</a></li>
+                  <li><a href="/lifeat-ftel.html#phat-trien-su-nghiep">Phát triển sự nghiệp</a></li>
+                  <li><a href="/lifeat-ftel.html#phuc-loi">Phúc lợi</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a style="cursor: pointer;">Tin tức & Sự kiện</a>
+                <ul class="sub-menu">
+                  <li><a href="/news.html">Tin tức</a></li>
+                  <li><a href="/events.html">Sự kiện</a></li>
+                  <li><a href="#">FTEL Carreer Booming</a></li>
+                  <li><a href="https://fptjobs.com/Nextgen-Leaders" target="_blank">SV Tài năng</a></li>
+                  <li><a href="https://fptjobs.com/SVCNTS2024" target="_blank">SV Công nghệ Tập sự</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-icon burger-icon-white">
+            <span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span
+              class="burger-icon-bottom"></span>
+          </div>
+        </div>
+        <div class="header-right">
+          <div class="block-signin">
+            <div class="dropdown d-inline-block"><a class="btn btn-notify" id="dropdownNotify" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"></a>
+              <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownNotify">
+                <li><a class="dropdown-item active" href="#">CV của bạn đã được tiếp nhận</a></li>
+                <li><a class="dropdown-item" href="#">CV của bạn đã bị đánh trượt<table></table></a></li>
+                <li><a class="dropdown-item" href="#">🔔 Xem tất cả thông báo</a></li>
+              </ul>
+            </div>
+            <div class="member-login"><img alt="" src="assets/imgs/fox/avt.png">
+              <div class="info-member"> <strong class="color-brand-1">Nguyễn Tuấn Phong</strong>
+                <div class="dropdown"><a class="font-xs color-text-paragraph-2 icon-down" id="dropdownProfile"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">Quản lý tài
+                    khoản</a>
+                  <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="dropdownProfile">
+                    <li><a class="dropdown-item" href="/user-information.html">💼 Thông tin cá nhân</a></li>
+                    <!-- <li><a class="dropdown-item" href="user-information.html">Các vị trí đã ứng tuyển</a></li>
+                    <li><a class="dropdown-item" href="user-information.html">Các vị trí theo dõi</a></li>
+                    <li><a class="dropdown-item" href="user-information.html">Câu hỏi thường gặp</a></li> -->
+                    <li><a class="dropdown-item" style="cursor: pointer;" data-bs-toggle="modal"
+                        data-bs-target="#ModalRePassword">🔒 Đổi mật khẩu</a></li>
+                    <li><a class="dropdown-item" href="index.html">🪬 Đăng xuất</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+    <div class="mobile-header-wrapper-inner">
+      <div class="mobile-header-content-area">
+        <div class="perfect-scroll mt-60">
+          <div class="mobile-header-border mb-30">
+            <a class="btn btn-default btn-shadow  hover-up" data-bs-toggle="modal" data-bs-target="#ModalLogin">Đăng
+              nhập</a>
+            <a class="text-link-bd-btom ml-30 hover-up" style="cursor: pointer;" data-bs-toggle="modal"
+              data-bs-target="#ModalRegister">Đăng ký</a>
+          </div>
+          <div class="mobile-menu-wrap mobile-header-border">
+            <!-- mobile menu start-->
+            <nav>
+              <ul class="mobile-menu font-heading">
+                <li class>
+                  <a href="/jobs-grid.html">Cơ hội Việc làm</a>
+                </li>
+                <li class="has-children">
+                  <a href="#">Về chúng tôi</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Giới thiệu công ty</a></li>
+                    <li><a href="#">Thông tin liên hệ</a></li>
+                    <li><a href="#">Tham quan công ty</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Life at FTEL</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Hoạt động</a></li>
+                    <li><a href="#">Văn hóa đặc sắc</a></li>
+                    <li><a href="#">Phát triển sự nghiệp</a></li>
+                    <li><a href="#">Phúc lợi</a></li>
+                  </ul>
+                </li>
+                <li class="has-children">
+                  <a href="#">Tin tức & Sự kiện</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Sinh viên Tài năng</a></li>
+                    <li><a href="#">Sinh viên Công nghệ Tập sự</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-account">
+            <h6 class="mb-10">Tài khoản</h6>
+            <ul class="mobile-menu font-heading">
+              <li><a href="#">Thông tin cá nhân</a></li>
+              <li><a href="#">Đã ứng tuyển</a></li>
+              <li><a href="#">Đang theo dõi</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+              <li><a href="page-signin.html">Đăng xuất</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">
+            Copyright 2025 &copy; FPT Telecom.<br />Designed by FTEL.EB, FTEL.DSC ft
+            FTEL.HRIS
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="section-box-2">
+      <div class="container">
+        <div class="banner-hero banner-image-single"><img src="assets/imgs/page/blog/bg-breadcumb2.png" alt="jobbox">
+        </div>
+        <div class="box-company-profile">
+          <div class="image-compay"><img src="assets/imgs/page/candidates/candidate-profile.png" alt="jobbox"></div>
+          <div class="row mt-10">
+            <div class="col-lg-12 col-md-12">
+              <h3 class="mb-10">Nguyễn Tuấn Phong</h3>
+              <p class="mt-0 font-md color-text-paragraph-2 mb-15">UI/UX Designer. Front end Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom pt-10 pb-10"></div>
+      </div>
+    </section>
+    <section class="section-box mt-30  bg-fpt-element-reverse">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="box-nav-tabs nav-tavs-profile mb-30">
+              <ul class="nav" role="tablist">
+                <li><a class="btn btn-border  people-icon mb-20 active" href="#tab-my-profile" data-bs-toggle="tab"
+                    role="tab" aria-controls="tab-my-profile" aria-selected="true">Thông tin cá nhân</a></li>
+                <li><a class="btn btn-border recruitment-icon mb-20" href="#tab-my-jobs" data-bs-toggle="tab" role="tab"
+                    aria-controls="tab-my-jobs" aria-selected="false">Các vị trí đã ứng tuyển</a></li>
+                <li><a class="btn btn-border recruitment-icon mb-20" href="#tab-saved-jobs" data-bs-toggle="tab"
+                    role="tab" aria-controls="tab-saved-jobs" aria-selected="false">Các vị trí đã theo dõi</a></li>
+                <li><a class="btn btn-border aboutus-icon mb-20" href="#tab-qna" data-bs-toggle="tab" role="tab"
+                    aria-controls="tab-saved-jobs" aria-selected="false">Câu hỏi thường gặp</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-12 col-12 mb-50">
+            <div class="content-single">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-my-profile" role="tabpanel"
+                  aria-labelledby="tab-my-profile">
+                  <h4 class="mt-0 mb-15 color-brand-1">Thông tin của tôi</h4><a class="font-md color-text-paragraph-2 "
+                    href="#">✏️ Chỉnh sửa thông tin</a>
+                  <div class="row form-contact">
+                    <div class="col-12">
+                      <div class="box-skills">
+                        <h5 class="mt-0 color-brand-1">Thông tin ứng tuyển</h5>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Bạn biết thông tin tuyển dụng qua *</label>
+                          <select id="survey-select" name="survey-option" class="form-control">
+                            <option value="" disabled selected>-</option>
+                            <option value="option1">Option #1</option>
+                            <option value="option2">Option #2</option>
+                          </select>
+                        </div>
+                        <div class="row ">
+                          <span class="font-sm color-text-mutted mt-10 mb-10">Mong muốn làm việc tại *</span>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Tỉnh thành *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Quận huyện *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="box-skills">
+                        <h5 class="mt-0 color-brand-1">Thông tin cá nhân</h5>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Họ và tên *</label>
+                          <input class="form-control" type="text" placeholder="-" value="Nguyễn Tuấn Phong">
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Số Điện thoại *</label>
+                          <input class="form-control" type="text" placeholder="-" value="09123JQKA">
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Email *</label>
+                          <input class="form-control" type="text" placeholder="-" value="ntp.guitar@gmail.com">
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Ngày sinh *</label>
+                          <input class="form-control" type="date" value="17-11-1993">
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Số CMTND/Thẻ căn cước </label>
+                          <input class="form-control" type="text" placeholder="-" placeholder="-" value="">
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Giới tính *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Nam</option>
+                                <option value="option2">Nữ</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Hôn nhân</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Độc thân</option>
+                                <option value="option2">Đã kết hôn</option>
+                              </select>
+                            </div>
+                          </div>
+                          <h6 class="mt-20 mb-10">Sức khoẻ</h6>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Chiều cao</label>
+                              <input class="form-control" type="text" placeholder="cm" value="">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Cân nặng</label>
+                              <input class="form-control" type="text" placeholder="kg" value="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <h6 class="mt-20 mb-10">Quê quán</h6>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Tỉnh thành *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Quận huyện *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <h6 class="mt-20 mb-10">Nơi ở hiện tại</h6>
+                          <div class="form-group">
+                            <label class="font-sm color-text-mutted mb-10">Địa chỉ</label>
+                            <input class="form-control" type="text" placeholder="-" value="">
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Tỉnh thành *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Quận huyện *</label>
+                              <select id="survey-select" name="survey-option" class="form-control">
+                                <option value="" disabled selected>-</option>
+                                <option value="option1">Option #1</option>
+                                <option value="option2">Option #2</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="box-skills">
+                        <h5 class="mt-0 color-brand-1">Quá trình học tập</h5>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Hệ *</label>
+                          <select id="survey-select" name="survey-option" class="form-control">
+                            <option value="" disabled selected>-</option>
+                            <option value="option1">Tiến sĩ</option>
+                            <option value="option2">Thạc sĩ</option>
+                            <option value="option2">Đại học</option>
+                            <option value="option2">Cao đẳng</option>
+                            <option value="option2">Trung cấp</option>
+                            <option value="option2">THPT</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Trường *</label>
+                          <select id="survey-select" name="survey-option" class="form-control">
+                            <option value="" disabled selected>-</option>
+                            <option value="option1">Option #1</option>
+                            <option value="option2">Option #2</option>
+                          </select>
+                        </div>
+                        <div class="form-contact">
+                          <label class="font-sm color-text-mutted mb-10">Chuyên ngành *</label>
+                          <div class="form-group">
+                            <input class="form-control search-icon" type="text" value=""
+                              placeholder="Tìm kiếm chuyên ngành">
+                          </div>
+                        </div>
+                        <div class="box-tags mt-30"><a class="btn btn-grey-small mr-10">Kiến trúc<span
+                              class="close-icon"></span></a><a class="btn btn-grey-small mr-10">Kế toán - Kiểm toán<span
+                              class="close-icon"></span></a><a class="btn btn-grey-small mr-10">Cơ khí<span
+                              class="close-icon"></span></a></div>
+                        <div class="box-upload mt-30">
+                          <div class="add-file-upload">
+                            <input class="fileupload" type="file" name="file" data-date="Invalid date">
+                          </div><a class="btn btn-default">Tải hồ sơ</a>
+                        </div>
+                        <div class="mt-40"> <span class="card-info font-sm color-text-paragraph-2">Chỉ chọn được tối đa
+                            3
+                            chuyên nghành</span></div>
+                      </div>
+                      <div class="box-skills">
+                        <h5 class="mt-0 color-brand-1">Kinh nghiệm làm việc</h5>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Quá trình làm việc</label>
+                          <textarea class="form-control"
+                            placeholder="Thời gian - Vị trí - Tên công ty - Mô tả ngắn gọn về công việc đảm nhiệm"
+                            name="message" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label class="font-sm color-text-mutted mb-10">Số năm kinh nghiệm *</label>
+                          <select id="survey-select" name="survey-option" class="form-control">
+                            <option value="" disabled selected>-</option>
+                            <option value="option1">0 - 1 năm kinh nghiệm</option>
+                            <option value="option2">1 - 2 năm kinh nghiệm</option>
+                            <option value="option2">2 - 3 năm kinh nghiệm</option>
+                            <option value="option2">3 - 4 năm kinh nghiệm</option>
+                            <option value="option2">4 - 5 năm kinh nghiệm</option>
+                            <option value="option2">Trên 5 năm kinh nghiệm</option>
+                          </select>
+                        </div>
+                        <div class="row ">
+                          <span class="font-sm color-text-mutted mt-10 mb-10">Mức lương mong muốn</span>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Từ (VN₫)</label>
+                              <input class="form-control" type="number" placeholder="-" value="">
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="font-sm color-text-mutted mb-10">Đến (VN₫)</label>
+                              <input class="form-control" type="number" placeholder="-" value="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-contact">
+                          <label class="font-sm color-text-mutted mb-10">Kỹ năng *</label>
+                          <div class="form-group">
+                            <input class="form-control search-icon" type="text" value=""
+                              placeholder="Tìm kiếm chuyên ngành">
+                          </div>
+                        </div>
+                        <div class="box-tags mt-30"><a class="btn btn-grey-small mr-10">Kiến trúc<span
+                              class="close-icon"></span></a><a class="btn btn-grey-small mr-10">Kế toán - Kiểm toán<span
+                              class="close-icon"></span></a><a class="btn btn-grey-small mr-10">Cơ khí<span
+                              class="close-icon"></span></a></div>
+                        <div class="mt-40"> <span class="card-info font-sm color-text-paragraph-2">Chỉ chọn được tối đa
+                            5
+                            kỹ năng</span></div>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center mt-20">
+                      <div class="form-group mt-10">
+                        <button class="btn btn-default btn-brand icon-tick">Lưu thông tin</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-my-jobs" role="tabpanel" aria-labelledby="tab-my-jobs">
+                  <h4 class="mt-0 mb-15 color-brand-1">Các vị trí đã ứng tuyển</h4>
+                  <div class="row display-list mt-30">
+                    <div class="col-xl-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left">
+                          <div class="right-info">
+                            <h6><a class href="#">Nghiên cứu Thị trường</a></h6>
+                            <span class="card-briefcase">Thực tập</span>
+                            <span class="card-location">Huế</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 01/03/2025</span>
+                          <ul class="font-sm color-text-paragraph mt-15">
+                            <li>Ngày ứng tuyển: 16/03/2025</li>
+                            <li>Trạng thái: Đang xét duyệt</li>
+                            <li>Thao tác: Kệ</li>
+                          </ul>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="apply-now-bottom mt-20">
+                            <span class="card-text-price"> <span>Lương thoả thuận</span></span>
+                            <a class="btn btn-apply-now" href="/job-details.html">
+                              Chi tiết vị trí</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left">
+                          <div class="right-info">
+                            <h6><a href="#">Chuyên viên Marketing Online</a></h6>
+                            <span class="card-briefcase">Toàn thời gian</span>
+                            <span class="card-location">Đà Nẵng</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 15/03/2025</span>
+                          <ul class="font-sm color-text-paragraph mt-15">
+                            <li>Ngày ứng tuyển: 16/03/2025</li>
+                            <li>Trạng thái: Đang cãi nhau</li>
+                            <li>Thao tác: Kệ</li>
+                          </ul>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="apply-now-bottom mt-20">
+                            <span class="card-text-price">8 - 12 <span> Triệu ₫</span></span>
+                            <a class="btn btn-apply-now" href="/job-details.html">
+                              Chi tiết vị trí</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="paginations">
+                    <ul class="pager">
+                      <li><a class="pager-prev" href="#"></a></li>
+                      <li><a class="pager-number" href="#">1</a></li>
+                      <li><a class="pager-number" href="#">2</a></li>
+                      <li><a class="pager-number" href="#">3</a></li>
+                      <li><a class="pager-number" href="#">4</a></li>
+                      <li><a class="pager-number" href="#">5</a></li>
+                      <li><a class="pager-number active" href="#">6</a></li>
+                      <li><a class="pager-number" href="#">7</a></li>
+                      <li><a class="pager-next" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-saved-jobs" role="tabpanel" aria-labelledby="tab-saved-jobs">
+                  <h4 class="mt-0 mb-15 color-brand-1">Các vị trí đã theo dõi</h4>
+                  <div class="row mt-30">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left">
+                          <span class="hot-jobs">
+                          </span>
+                          <div class="right-info">
+                            <h6><a class href="#">Thực tập Market
+                                Research</a></h6><span class="card-briefcase">Thực tập
+                            </span><span class="card-location">Hà Nội</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 01/03/2025</span>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="card-2-bottom mt-20">
+                            <div class="apply-now-bottom">
+                              <span class="card-text-price"><span> <span>Lương thoả thuận</span></span></span>
+                              <a class="btn btn-apply-now" href="/job-details.html">
+                                Ứng tuyển</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                          <div class="right-info">
+                            <h6><a href="#">Marketing Online</a></h6><span class="card-briefcase">Toàn thời
+                              gian</span><span class="card-location">Hà
+                              Nội</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 15/03/2025</span>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="apply-now-bottom mt-20">
+                            <span class="card-text-price">3 - 8 <span> Triệu ₫</span></span>
+                            <a class="btn btn-apply-now" href="/job-details.html">
+                              Ứng tuyển</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                          <div class="right-info">
+                            <h6><a href="#">Tuyển trạch viên bóng
+                                đá</a></h6><span class="card-briefcase">Toàn
+                              thời
+                              gian</span><span class="card-location">Bắc
+                              Kạn</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 10/04/2025</span>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="apply-now-bottom mt-20">
+                            <span class="card-text-price">4 - 8 <span>Triệu ₫</span></span>
+                            <a class="btn btn-apply-now" href="/job-details.html">
+                              Ứng tuyển</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                      <div class="card-grid-2 grid-bd-16-dark hover-up">
+                        <div class="card-grid-2-image-left"><span class="hot-jobs"></span>
+                          <div class="right-info">
+                            <h6><a href="#">Lập trình viên
+                                Non-Stack</a></h6><span class="card-briefcase">Thực
+                              tập</span><span class="card-location">Lào
+                              Cai</span>
+                          </div>
+                        </div>
+                        <div class="card-block-info">
+                          <span class="card-time">Thời hạn: 05/05/2025</span>
+                          <div class="border-bottom pb-20"></div>
+                          <div class="apply-now-bottom mt-20">
+                            <span class="card-text-price">15 - 18 <span> Triệu ₫</span></span>
+                            <a class="btn btn-apply-now" href="/job-details.html">
+                              Ứng tuyển</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="paginations">
+                    <ul class="pager">
+                      <li><a class="pager-prev" href="#"></a></li>
+                      <li><a class="pager-number" href="#">1</a></li>
+                      <li><a class="pager-number" href="#">2</a></li>
+                      <li><a class="pager-number" href="#">3</a></li>
+                      <li><a class="pager-number" href="#">4</a></li>
+                      <li><a class="pager-number" href="#">5</a></li>
+                      <li><a class="pager-number active" href="#">6</a></li>
+                      <li><a class="pager-number" href="#">7</a></li>
+                      <li><a class="pager-next" href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade " id="tab-qna" role="tabpanel" aria-labelledby="tab-saved-jobs">
+                  <h4 class="mt-0 mb-15 color-brand-1">Câu hỏi thường gặp</h4>
+                  <span class="font-md color-text-paragraph-2">Mọi vấn đề cần giải đáp, bạn vui lòng sử dụng livechat
+                    hoặc liên hệ theo hotline: <span class="font-bold"> 024 7300 2222 </span> máy lẻ <span
+                      class="font-bold"> 4042</span>.<br>
+                    Ngoài ra, bạn có thể trực tiếp gửi mail tới hòm thư: <span
+                      class="font-bold">Vieclam@fpt.com.vn</span> để được giải
+                    đáp
+                    thắc
+                    mắc.
+                  </span>
+                  <div class="row mt-30">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="card-grid-border hover-up wow animate__ animate__fadeIn animated"
+                        style="visibility: visible; animation-name: fadeIn;">
+                        <h5 class="mb-20">Thời gian phản hồi sau khi nộp hồ sơ (CV) là bao lâu?</h5>
+                        <p class="font-sm mb-20 color-text-paragraph">Khi bạn ứng tuyển vào FPT Telecom, hồ sơ của bạn
+                          sẽ được xem xét trong thời hạn tối đa 20 ngày làm việc tính từ ngày nộp
+                          đơn. FPT Telecom sẽ liên lạc trực tiếp với những bạn vượt qua vòng CV / Vòng thi tuyển online.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                      <div class="card-grid-border hover-up wow animate__ animate__fadeIn animated"
+                        style="visibility: visible; animation-name: fadeIn;">
+                        <h5 class="mb-20">Khi nào tôi được thông báo về kết quả phỏng vấn của mình?</h5>
+                        <p class="font-sm mb-20 color-text-paragraph">Bất kỳ vị trí nào của FPT Telecom, ứng viên đều
+                          được thông báo về kết quả phỏng vấn. Chỉ cần bạn có tham gia buổi phỏng
+                          vấn, bạn chắc chắn sẽ nhận được kết quả qua email đã đăng ký ban đầu.
+                          Thời gian trả kết quả phỏng vấn tối đa trong 07 ngày làm việc. Trường hợp nhanh nhất, bạn có
+                          thể nhận kết quả ngay sau
+                          buổi phỏng vấn.
+                          Một số trường hợp đặc biệt, ví dụ cần chấm bài kiểm tra năng lực … khiến cho thời gian trả kết
+                          quả trễ hơn 07 ngày làm
+                          việc, bộ phận Tuyển dụng sẽ có thông báo cụ thể tới bạn.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="banner-hero hero-2">
+        <div class="banner-inner">
+          <div class="block-banner">
+            <h3 class="text-white text-center">
+              Nhận thông báo việc làm từ FPT Telecom
+            </h3>
+            <div class="form-find mt-40 mb-40">
+              <form>
+                <div class="box-industry">
+                  <select class="form-input mr-10 select-active input-industry">
+                    <option value disabled selected>Ngành nghề</option>
+                    <option value="1">Báo chí</option>
+                    <option value="2">Truyền hình</option>
+                    <option value="3">Phần cứng</option>
+                    <option value="4">Mạng</option>
+                    <option value="5">Điện tử</option>
+                    <option value="6">Thiết kế</option>
+                  </select>
+                </div>
+                <input class="form-input input-email mr-10" type="text" placeholder="Email của bạn " />
+                <input class="form-input input-upload mr-10" type="file" placeholder="CV của bạn">
+
+                <button class="btn btn-default font-heading icon-send-letter">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-fpt-element-footer">
+    <div class="container pt-50 text-white">
+      <div class="row">
+        <div class="col-12">
+          <div class="card-grid-2 grid-bd-16-nowhite">
+            <div class="row mb-10">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card-grid-2-image-left">
+                  <div class="image-box"><img src="assets/imgs/template/fpt-telecom-logo-footer.svg" alt=""></div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="text-md-end pr-20 ml-20">
+                  <h5 class="mt-20">Công ty Cổ phần Viễn Thông FPT</h5>
+                  <p>Ban Nhân sự</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-xs-6 pl-md-25 mb-20">
+            <h6 class=" mb-20">Trung tâm Thu hút Nguồn nhân lực</h6>
+            <ul class="menu-footer">
+              <li><a href="#">FPT Tower, số 10 Phạm Văn Bạch, Cầu Giấy, Hà Nội</a>
+              </li>
+              <li><a href="#">FPT Tân thuận, KCX Tân Thuận, Quận 7, TP. Hồ Chí Minh</a>
+              </li>
+              <li><a href="#">ftelhr.tuyendung@fpt.com</a></li>
+              <li><a href="#">(+84) 944 665 172</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Về chúng tôi</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Giới thiệu công ty</a></li>
+              <li><a href="#">Giới thiệu phòng ban</a></li>
+              <li><a href="#">Quy trình tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Việc làm</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Tuyển dụng Hot</a></li>
+              <li><a href="#">Tuyển dụng mới</a></li>
+              <li><a href="#">Vị trí quản lý</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-6 text-md-end mb-20">
+            <h6 class=" mb-20">Life at FTEL</h6>
+            <ul class="menu-footer">
+              <li><a href="#">Hoạt động</a></li>
+              <li><a href="#">Văn hoá đặc sắc</a></li>
+              <li><a href="#">Phát triển sự nghiệp</a></li>
+              <li><a href="#">Phúc lợi</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-20">
+          <div class="col-12">
+            <div class="card-grid-2">
+              <div class="row pl-15 pr-15 mb-10">
+                <div class="col-lg-7 col-md-3 col-sm-12 ">
+                  <h6 class="mt-10 ">Theo dõi các kênh chính thức</h6>
+                  <p>của FPT Telecom</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text-md-end">
+                  <h6 class="mt-10">Hỗ trợ Khách hàng</h6>
+                  <p>hotrokhachhang@fpt.com</p>
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-12 text-md-end">
+                  <h6 class="mt-10">Hotline</h6>
+                  <p>1900 6600</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text-md-end">
+                  <div class="footer-social mt-20">
+                    <a class="icon-socials icon-facebook" href="https://www.facebook.com/FptTelecom/"
+                      target="_blank"></a>
+                    <a class="icon-socials icon-youtube" href="https://www.youtube.com/user/likefpt#"
+                      target="_blank"></a>
+
+                    <a class="icon-socials icon-instagram" href="https://www.instagram.com/fpt.telecom/"
+                      target="_blank"></a>
+                    <a class="icon-socials icon-zalo" href="https://zalo.me/fpttelecom" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col-md-6 pl-20 pr-20">
+              <span class="font-xs color-text-paragraph">Copyright &copy;
+                2025. Official Website của Trung tâm Thu hút Nguồn nhân lực - Ban nhân sự FPT Telecom
+              </span>
+            </div>
+            <div class="col-md-6 text-md-end pl-20 pr-20">
+              <div class="footer-social">
+                <a class="font-xs color-text-paragraph" href="#">Privacy
+                  Policy</a><a class="font-xs color-text-paragraph mr-30 ml-30" href="#">Terms &amp;
+                  Conditions</a><a class="font-xs color-text-paragraph" href="#">Security</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins/waypoints.js"></script>
+  <script src="assets/js/plugins/wow.js"></script>
+  <script src="assets/js/plugins/magnific-popup.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/select2.min.js"></script>
+  <script src="assets/js/plugins/isotope.js"></script>
+  <script src="assets/js/plugins/scrollup.js"></script>
+  <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+  <script src="assets/js/plugins/counterup.js"></script>
+  <script src="assets/js/main.js?v=4.1"></script>
+  <script src="assets/js/plugins/counterup.js"></script>
+
+</body>
+
+</html>
