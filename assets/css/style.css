@@ -691,12 +691,20 @@ h6 {
   color: #85ff83;
 }
 
+.color-dark-green {
+  color: #01943c;
+}
+
 .color-brand-1 {
   color: #05264e !important;
 }
 
 .color-brand-2 {
   color: #3c65f5;
+}
+
+.color-red {
+  color: red;
 }
 
 .op-70 {
@@ -2664,7 +2672,7 @@ label {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 575px;
+  height: 375px;
   background: url(../imgs/page/blog/img-big1.png) top left;
   background-size: cover;
   border-radius: 16px;
@@ -7214,6 +7222,61 @@ ul li:last-child .card-list-4 {
   padding: 50px 40px 20px 40px;
   display: inline-block;
   width: 100%;
+  border-radius: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #e1e5f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.accordion-title span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #2f2e8b;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+.accordion-content {
+  color: #333;
+  padding: 16px;
+  display: none;
+  border-top: 1px solid #e1e5f0;
+}
+
+/* Ẩn checkbox thực hiện vai trò điều khiển trạng thái */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Khi checkbox được chọn, hiển thị nội dung */
+input[type="checkbox"]:checked ~ .accordion-content {
+  display: block;
+}
+
+/* Tùy chỉnh tiêu đề khi được mở */
+input[type="checkbox"]:checked ~ .accordion-title {
+  background-color: #f8f9ff;
+  border-bottom: 1px solid #e1e5f0;
 }
 
 .link-map {
@@ -7426,7 +7489,7 @@ ul li:last-child .card-list-4 {
 }
 
 .nav-tavs-profile {
-  background-color: transparent !important;
+  background-color: white !important;
   border: 2px solid #e0e6f6; /* Viền xám nhẹ, có thể chỉnh dày hơn */
   border-radius: 20px;
   padding: 20px 20px 0px 20px;
@@ -7479,6 +7542,7 @@ ul li:last-child .card-list-4 {
 }
 
 .box-skills {
+  background-color: white;
   border: 2px solid #e0e6f6;
   padding: 20px;
   margin-top: 33px;
@@ -8699,7 +8763,7 @@ ul li:last-child .card-list-4 {
   display: flex;
   box-shadow: 0px 10px 20px -5px rgba(10, 42, 105, 0.06);
   margin: auto;
-  border-radius: 4px;
+  border-radius: 20px;
   overflow: hidden;
 }
 .box-we-hiring::before {
@@ -8709,7 +8773,7 @@ ul li:last-child .card-list-4 {
   left: 15px;
   height: 120px;
   width: 150px;
-  background: url(../imgs/page/homepage1/bg-left-hiring.svg) no-repeat 0px 0px;
+  background: url(../imgs/fox/2.png) no-repeat 0px -20px;
   background-size: cover;
 }
 .box-we-hiring::after {
