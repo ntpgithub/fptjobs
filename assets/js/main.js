@@ -193,7 +193,7 @@
         prevEl: ".swiper-button-prev-group-9",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1360: {
@@ -227,7 +227,7 @@
         prevEl: ".swiper-button-prev-group-7",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1360: {
@@ -261,7 +261,7 @@
         prevEl: ".swiper-button-prev",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1360: {
@@ -298,7 +298,7 @@
         clickable: true,
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -335,7 +335,7 @@
         clickable: true,
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1360: {
@@ -367,7 +367,7 @@
         prevEl: ".swiper-button-prev-4",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -396,7 +396,7 @@
         prevEl: ".swiper-button-prev-4",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -425,7 +425,7 @@
         prevEl: ".swiper-button-prev",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -454,7 +454,7 @@
         prevEl: ".swiper-button-prev",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -483,7 +483,7 @@
         prevEl: ".swiper-button-prev",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
       breakpoints: {
         1199: {
@@ -515,7 +515,7 @@
         prevEl: ".swiper-button-prev-1",
       },
       autoplay: {
-        delay: 10000,
+        delay: 3000,
       },
     });
   });

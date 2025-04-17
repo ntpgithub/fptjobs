@@ -495,7 +495,7 @@ a {
   width: 100% !important;
 }
 .select-style .select2 .select2-selection__arrow {
-  background: url(../imgs/template/icons/arrow-down.svg) no-repeat right 10px
+  background: url(../imgs/general/icons/arrow-down.svg) no-repeat right 10px
     center;
   top: 11px;
   width: 26px;
@@ -732,22 +732,6 @@ h6 {
   margin: 0px 2px;
 }
 
-.share-facebook {
-  background-image: url(../imgs/page/about/facebook.svg);
-}
-
-.share-twitter {
-  background-image: url(../imgs/page/about/twitter.svg);
-}
-
-.share-instagram {
-  background-image: url(../imgs/page/about/instagram.svg);
-}
-
-.share-linkedin {
-  background-image: url(../imgs/page/about/linkedin.svg);
-}
-
 .box-progress-bar .progress {
   height: 6px;
   position: relative;
@@ -858,10 +842,10 @@ iframe {
 
 .bg-profile {
   background-color: transparent !important;
-  border: 2px solid #e0e6f6; /* Viền xám nhẹ, có thể chỉnh dày hơn */
+  border: 2px solid #e0e6f6;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .bg-footer {
@@ -1038,7 +1022,7 @@ h6,
 }
 
 .btn-apply-icon {
-  background-image: url(../imgs/template/icons/apply.svg);
+  background-image: url(../imgs/general/icons/apply.svg);
   background-position: 15px 11px;
   background-repeat: no-repeat;
   padding-left: 40px;
@@ -1060,7 +1044,7 @@ h6,
 }
 
 .btn-call-icon {
-  background-image: url(../imgs/template/icons/call.svg);
+  background-image: url(../imgs/general/icons/call.svg);
   background-position: 24px 17px;
   background-repeat: no-repeat;
   padding: 18px 30px 18px 65px;
@@ -1070,7 +1054,7 @@ h6,
 }
 
 .btn-download-icon {
-  background-image: url(../imgs/template/icons/icon-download.svg);
+  background-image: url(../imgs/general/icons/icon-download.svg);
   background-position: 24px 17px;
   background-repeat: no-repeat;
   padding: 18px 30px 18px 65px;
@@ -1082,11 +1066,11 @@ h6,
 .icon-down {
   display: inline-block;
   padding-right: 15px;
-  background: url(../imgs//template/icons/triangle.svg) no-repeat right center;
+  background: url(../imgs//general/icons/triangle.svg) no-repeat right center;
 }
 
 .btn-preview-icon {
-  background-image: url(../imgs/page/candidates/preview.svg);
+  background-image: url(../imgs/page/userinformation/preview.svg);
   background-position: 35px 14px;
   background-repeat: no-repeat;
   padding: 14px 30px 14px 55px;
@@ -1144,7 +1128,7 @@ h6,
   border-radius: 8px;
 }
 .btn.icon-tick {
-  background-image: url(../imgs/template/icons/icon-tick.svg);
+  background-image: url(../imgs/general/icons/icon-tick.svg);
   background-repeat: no-repeat;
   background-position: 18px 12px;
   padding-left: 47px;
@@ -1155,14 +1139,14 @@ h6,
 }
 
 .btn-icon-load {
-  background-image: url(../imgs/template/icons/icon-load.svg);
+  background-image: url(../imgs/general/icons/icon-load.svg);
   background-position: 18px center;
   background-repeat: no-repeat;
   padding-left: 42px;
 }
 
 .btn-icon-more {
-  background-image: url(../imgs/template/icons/icon-more.svg);
+  background-image: url(../imgs/general/icons/icon-more.svg);
   background-position: right 16px center;
   background-repeat: no-repeat;
   padding-right: 50px;
@@ -1185,7 +1169,7 @@ h6,
   line-height: 24px;
   color: #ffffff;
   padding: 15px 28px 15px 60px;
-  background: #3c65f5 url(../imgs/page/company/icon-email.svg) no-repeat 25px
+  background: #3c65f5 url(../imgs/general/icons/icon-email2.svg) no-repeat 25px
     15px;
   border-radius: 4px;
 }
@@ -1267,8 +1251,7 @@ h6,
 }
 
 .btn-arrow-right {
-  background: url(../imgs/page/homepage2/arrow-right.svg) no-repeat right 15px
-    top 3px;
+  background: url(../imgs/general/arrow-right.svg) no-repeat right 15px top 3px;
   color: #3c65f5;
   padding: 0px 40px 0px 0px;
   font-size: 14px;
@@ -1410,7 +1393,7 @@ span.btn {
   width: 21px;
   height: 22px;
   border-radius: 5px;
-  background: #3c65f5 url(../imgs/template/icons/tick.svg) no-repeat center;
+  background: #3c65f5 url(../imgs/general/icons/tick.svg) no-repeat center;
 }
 
 /*COMPONENTS -> FORM*/
@@ -1541,7 +1524,7 @@ label {
 }
 
 .apply-job-form {
-  background-image: url(../imgs/template/bg-1.svg);
+  background-image: url(../imgs/general/bg-1.svg);
   background-repeat: no-repeat;
 }
 .apply-job-form .text-brand-2 {
@@ -1909,7 +1892,7 @@ label {
   color: #a0abb8;
   display: inline-block;
   padding: 0px 15px 0px 15px;
-  background: url(../imgs/template/icons/time.svg) no-repeat 0px 5px;
+  background: url(../imgs/general/icons/time.svg) no-repeat 0px 5px;
 }
 
 .card-briefcase {
@@ -1917,7 +1900,7 @@ label {
   color: #a0abb8;
   display: inline-block;
   padding: 0px 15px 0px 15px;
-  background: url(../imgs/template/icons/briefcase.svg) no-repeat 0px 6px;
+  background: url(../imgs/general/icons/briefcase.svg) no-repeat 0px 6px;
 }
 
 .card-location {
@@ -1925,7 +1908,7 @@ label {
   color: #a0abb8;
   display: inline-block;
   padding: 0px 0px 0px 20px;
-  background: url(../imgs/template/icons/location.svg) no-repeat 0px 6px;
+  background: url(../imgs/general/icons/location.svg) no-repeat 0px 6px;
   line-height: 24px;
 }
 
@@ -2136,7 +2119,7 @@ label {
   font-weight: bold;
   font-size: 14px;
   padding: 0px 0px 0px 20px;
-  background: url(../imgs/page/job-single/salary.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/salary.svg) no-repeat 0px 0px;
 }
 .card-grid-2 .card-block-info .card-text-price span {
   font-size: 14px;
@@ -2216,7 +2199,7 @@ label {
   right: 15px;
   height: 25px;
   width: 25px;
-  background: url(../imgs/template/icons/flash.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/flash.svg) no-repeat 0px 0px;
   cursor: pointer;
 }
 .card-grid-2 .hot-jobs {
@@ -2225,13 +2208,13 @@ label {
   right: 15px;
   height: 25px;
   width: 25px;
-  background: url(../imgs/template/icons/hot.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/hot.svg) no-repeat 0px 0px;
   cursor: pointer;
 }
 .card-grid-2 .hot-jobs::after {
   z-index: 9999;
-  content: "Việc làm Hot"; /* Nội dung tooltip */
-  visibility: hidden;
+  content: "Việc làm Hot";
+  /visibility: hidden;
   opacity: 0;
   width: max-content;
   background-color: #feb0d7;
@@ -2241,7 +2224,7 @@ label {
   border-radius: 6px;
   border: 1px solid #b4c0e0;
   position: absolute;
-  top: -32px; /* Hiển thị phía trên */
+  top: -32px;
   right: 10px;
   width: 110px;
   white-space: nowrap;
@@ -2253,7 +2236,7 @@ label {
 }
 .card-grid-2 .new-jobs::after {
   z-index: 9999;
-  content: "Việc làm mới"; /* Nội dung tooltip */
+  content: "Việc làm mới";
   visibility: hidden;
   opacity: 0;
   width: max-content;
@@ -2264,7 +2247,7 @@ label {
   border-radius: 6px;
   border: 1px solid #b4c0e0;
   position: absolute;
-  top: -32px; /* Hiển thị phía trên */
+  top: -32px;
   right: 10px;
   width: 110px;
   white-space: nowrap;
@@ -2295,7 +2278,7 @@ label {
   color: #3c65f5;
 }
 .card-grid-2 .card-grid-2-image-left .right-info .location-small {
-  background: url(../imgs/template/icons/location.svg) no-repeat 0px 5px;
+  background: url(../imgs/general/icons/location.svg) no-repeat 0px 5px;
   display: inline-block;
   padding: 0px 0px 0px 20px;
   font-size: 12px;
@@ -2433,7 +2416,7 @@ label {
   font-size: 14px;
   display: inline-block;
   padding: 0px 15px 0px 25px;
-  background: url(../imgs/template/icons/time.svg) no-repeat 0px 3px;
+  background: url(../imgs/general/icons/time.svg) no-repeat 0px 3px;
 }
 .card-foxer .card-block-info .card-text-price {
   color: #3c65f5;
@@ -2484,22 +2467,22 @@ label {
 }
 
 .bg-image-foxer-blue {
-  background-image: url(../imgs/page/homepage1/foxer-1.png),
-    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-image: url(../imgs/page/homepage/foxer-1.png),
+    url(../imgs/general/bg-blue-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: top right, center;
 }
 .bg-image-foxer-orange {
-  background-image: url(../imgs/page/homepage1/foxer-2.png),
-    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-image: url(../imgs/page/homepage/foxer-2.png),
+    url(../imgs/general/bg-orange-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: top right, center;
 }
 .bg-image-foxer-green {
-  background-image: url(../imgs/page/homepage1/foxer-3.png),
-    url(../imgs/page/homepage1/bg-green-element.png);
+  background-image: url(../imgs/page/homepage/foxer-3.png),
+    url(../imgs/general/bg-green-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: top right, center;
@@ -2583,7 +2566,7 @@ label {
   font-size: 14px;
   display: inline-block;
   padding: 0px 15px 0px 25px;
-  background: url(../imgs/template/icons/time.svg) no-repeat 0px 3px;
+  background: url(../imgs/general/icons/time.svg) no-repeat 0px 3px;
 }
 .card-grid-3 .card-block-info .card-text-price {
   color: #3c65f5;
@@ -2673,14 +2656,14 @@ label {
   display: inline-block;
   width: 100%;
   height: 375px;
-  background: url(../imgs/page/blog/img-big1.png) top left;
+  background: url(../imgs/page/eventnews/img-big1.png) top left;
   background-size: cover;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 30px;
 }
 .card-grid-5 .category {
-  background: url(../imgs/page/blog/picture-icon.svg) center no-repeat;
+  background: url(../imgs/page/eventnews/picture-icon.svg) center no-repeat;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -2699,7 +2682,8 @@ label {
   bottom: 0px;
   top: 10%;
   width: 100%;
-  background: url(../imgs/page/blog/bg-black-trans.png) repeat-x center bottom;
+  background: url(../imgs/page/eventnews/bg-black-trans.png) repeat-x center
+    bottom;
   z-index: 2;
 }
 .card-grid-5 .box-cover-img .content-bottom {
@@ -2715,43 +2699,6 @@ label {
   max-width: 36px;
 }
 
-.card-grid-6 {
-  position: relative;
-}
-.card-grid-6 .card-text-desc {
-  border: 1px solid #e0e6f7;
-  padding: 20px;
-  border-radius: 4px;
-  position: relative;
-  margin-bottom: 35px;
-}
-.card-grid-6 .card-text-desc::before {
-  content: "";
-  height: 30px;
-  width: 33px;
-  background: #ffffff url(../imgs/page/about/arrow.png) no-repeat;
-  bottom: -29px;
-  left: 20px;
-  position: absolute;
-  z-index: 2;
-}
-.card-grid-6 .card-image {
-  display: flex;
-  padding-left: 5px;
-}
-.card-grid-6 .card-image .image {
-  min-width: 75px;
-}
-.card-grid-6 .card-image .image img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-.card-grid-6 .card-image .card-profile {
-  width: 100%;
-  padding-top: 5px;
-}
-
 .card-grid-border {
   border: 1px solid #e0e6f7;
   padding: 30px;
@@ -2764,8 +2711,7 @@ label {
 .card-grid-border .link-arrow {
   display: inline-block;
   padding: 0px 35px 0px 0px;
-  background: url(../imgs/template/icons/arrow-right.svg) no-repeat right top
-    2px;
+  background: url(../imgs/general/icons/arrow-right.svg) no-repeat right top 2px;
   color: #3c65f5;
   font-size: 14px;
   line-height: 22px;
@@ -2833,72 +2779,72 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-image-blue {
-  background-image: url(../imgs/page/homepage1/img-blue-girl.png),
-    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-image: url(../imgs/page/homepage/img-blue-girl.png),
+    url(../imgs/general/bg-blue-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-orange {
-  background-image: url(../imgs/page/homepage1/img-orange-girl.png),
-    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-image: url(../imgs/page/homepage/img-orange-girl.png),
+    url(../imgs/general/bg-orange-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-green {
-  background-image: url(../imgs/page/homepage1/img-green-boyngirl.png),
-    url(../imgs/page/homepage1/bg-green-element.png);
+  background-image: url(../imgs/page/homepage/img-green-boyngirl.png),
+    url(../imgs/general/bg-green-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-blue-product {
-  background-image: url(../imgs/page/homepage1/img-blue-product.png),
-    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-image: url(../imgs/page/about/img-blue-product.png),
+    url(../imgs/general/bg-blue-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-orange-product {
-  background-image: url(../imgs/page/homepage1/img-orange-product.png),
-    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-image: url(../imgs/page/about/img-orange-product.png),
+    url(../imgs/general/bg-orange-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-green-product {
-  background-image: url(../imgs/page/homepage1/img-green-product.png),
-    url(../imgs/page/homepage1/bg-green-element.png);
+  background-image: url(../imgs/page/about/img-green-product.png),
+    url(../imgs/general/bg-green-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-pink-product {
-  background-image: url(../imgs/page/homepage1/img-pink-product.png),
-    url(../imgs/page/homepage1/bg-pink-element.png);
+  background-image: url(../imgs/page/about/img-pink-product.png),
+    url(../imgs/general/bg-pink-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-orange2-product {
-  background-image: url(../imgs/page/homepage1/img-orange2-product.png),
-    url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-image: url(../imgs/page/about/img-orange2-product.png),
+    url(../imgs/general/bg-orange2-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
 }
 
 .bg-image-black-product {
-  background-image: url(../imgs/page/homepage1/img-black-product.png),
-    url(../imgs/page/homepage1/bg-black-element.png);
+  background-image: url(../imgs/page/about/img-black-product.png),
+    url(../imgs/general/bg-black-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: bottom right, center;
@@ -2906,48 +2852,48 @@ ul li:last-child .card-list-4 {
 
 /**/
 .bg-image-blue-culture {
-  background-image: url(../imgs/page/homepage1/img-blue-culture.png),
-    url(../imgs/page/homepage1/bg-blue-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-blue-culture.png),
+    url(../imgs/general/bg-blue-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
 }
 
 .bg-image-orange-culture {
-  background-image: url(../imgs/page/homepage1/img-orange-culture.png),
-    url(../imgs/page/homepage1/bg-orange-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-orange-culture.png),
+    url(../imgs/general/bg-orange-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
 }
 
 .bg-image-green-culture {
-  background-image: url(../imgs/page/homepage1/img-green-culture.png),
-    url(../imgs/page/homepage1/bg-green-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-green-culture.png),
+    url(../imgs/general/bg-green-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
 }
 
 .bg-image-pink-culture {
-  background-image: url(../imgs/page/homepage1/img-pink-culture.png),
-    url(../imgs/page/homepage1/bg-pink-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-pink-culture.png),
+    url(../imgs/general/bg-pink-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
 }
 
 .bg-image-orange2-culture {
-  background-image: url(../imgs/page/homepage1/img-orange2-culture.png),
-    url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-orange2-culture.png),
+    url(../imgs/general/bg-orange2-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: center, center;
 }
 
 .bg-image-black-culture {
-  background-image: url(../imgs/page/homepage1/img-black-culture.png),
-    url(../imgs/page/homepage1/bg-black-element.png);
+  background-image: url(../imgs/page/lifeatftel/img-black-culture.png),
+    url(../imgs/general/bg-black-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   background-position: right, center;
@@ -2955,42 +2901,42 @@ ul li:last-child .card-list-4 {
 
 /**/
 .bg-image-blue-none {
-  background-image: url(../imgs/page/homepage1/bg-blue-element.png);
+  background-image: url(../imgs/general/bg-blue-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-image-orange-none {
-  background-image: url(../imgs/page/homepage1/bg-orange-element.png);
+  background-image: url(../imgs/general/bg-orange-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-image-green-none {
-  background-image: url(../imgs/page/homepage1/bg-green-element.png);
+  background-image: url(../imgs/general/bg-green-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-image-pink-none {
-  background-image: url(../imgs/page/homepage1/bg-pink-element.png);
+  background-image: url(../imgs/general/bg-pink-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-image-orange2-none {
-  background-image: url(../imgs/page/homepage1/bg-orange2-element.png);
+  background-image: url(../imgs/general/bg-orange2-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-image-black-none {
-  background-image: url(../imgs/page/homepage1/bg-black-element.png);
+  background-image: url(../imgs/general/bg-black-element.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3004,7 +2950,7 @@ ul li:last-child .card-list-4 {
 .card-culture-1::after {
   content: "Tôn trọng - FPT tạo môi trường cởi mở, nơi mọi người được lắng nghe, thể hiện quan điểm và phát triển tối đa, không phân biệt vị trí hay quan hệ.";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3012,15 +2958,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3038,7 +2983,7 @@ ul li:last-child .card-list-4 {
 .card-culture-2::after {
   content: "Đổi mới – FPT tạo điều kiện cho mọi thành viên học tập suốt đời, đồng thời tiếp thu cái mới, đầu tư nghiên cứu và thúc đẩy sáng tạo để dẫn đầu.";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3046,15 +2991,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3072,7 +3016,7 @@ ul li:last-child .card-list-4 {
 .card-culture-3::after {
   content: "Đồng đội – FPT là một đại gia đình, nơi mỗi thành viên gắn kết, sẻ chia, đồng hành vượt qua mọi thử thách, cùng nhau sát cánh vì mục tiêu chung.";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3080,15 +3024,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3106,7 +3049,7 @@ ul li:last-child .card-list-4 {
 .card-culture-4::after {
   content: "Chí công – FPT đề cao chính trực, công bằng, minh bạch, đặt lợi ích tổ chức lên hàng đầu, mọi quyết định không thiên vị, không phụ thuộc thân sơ.";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3114,15 +3057,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3140,7 +3082,7 @@ ul li:last-child .card-list-4 {
 .card-culture-5::after {
   content: "Gương mẫu – Lãnh đạo FPT tiên phong, làm gương, truyền cảm hứng, sẵn sàng xông pha cùng nhân viên và thể hiện rõ tinh thần “Tôn trọng - Đổi mới - Đồng đội”.";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3148,15 +3090,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3174,7 +3115,7 @@ ul li:last-child .card-list-4 {
 .card-culture-6::after {
   content: "Sáng suốt – FPT yêu cầu lãnh đạo phải có tầm nhìn xa và tính quyết đoán. Luôn hỗ trợ nhân viên, đưa ra quyết định chính xác, kịp thời, định hướng chiến lược dài hạn. ";
   position: absolute;
-  bottom: 10%; /* Hiển thị phía trên */
+  bottom: 10%;
   right: -130px;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.1);
@@ -3182,15 +3123,14 @@ ul li:last-child .card-list-4 {
   padding: 10px;
   border-radius: 20px;
   font-size: 14px;
-  width: 300px; /* Giới hạn chiều rộng */
+  width: 300px;
   text-align: right;
-  white-space: pre-wrap; /* Cho phép xuống dòng */
-  word-wrap: break-word; /* Bẻ dòng nếu quá dài */
+  white-space: pre-wrap;
+  word-wrap: break-word;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  /* 🎨 Hiệu ứng Blur */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -3212,29 +3152,29 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-fpt-element {
-  background-image: url(../imgs/page/homepage1/fpt-right-element.png),
-    url(../imgs/page/homepage1/fpt-left-element.png);
+  background-image: url(../imgs/general/fpt-right-element.png),
+    url(../imgs/general/fpt-left-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-position: top right -120px, bottom -100px left -140px;
 }
 .bg-gen-fpt-element {
-  background-image: url(../imgs/page/homepage1/gen-fpt.svg),
-    url(../imgs/page/homepage1/gen-fpt.svg);
+  background-image: url(../imgs/page/lifeatftel/gen-fpt.svg),
+    url(../imgs/page/lifeatftel/gen-fpt.svg);
   background-repeat: no-repeat, no-repeat;
   background-size: 50%, 50%;
   background-position: left -500px center, right -500px center;
 }
 .bg-fpt-element-reverse {
-  background-image: url(../imgs/page/homepage1/fpt-right-element.png),
-    url(../imgs/page/homepage1/fpt-left-element.png);
+  background-image: url(../imgs/general/fpt-right-element.png),
+    url(../imgs/general/fpt-left-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-position: bottom right -120px, top left -140px;
 }
 .bg-fpt-element-process {
-  background-image: url(../imgs/page/homepage1/fpt-right-element.png),
-    url(../imgs/page/homepage1/fpt-left-element.png);
+  background-image: url(../imgs/general/fpt-right-element.png),
+    url(../imgs/general/fpt-left-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 22%, 22%;
   background-position: top right -120px, bottom -100px left -140px;
@@ -3242,44 +3182,42 @@ ul li:last-child .card-list-4 {
 
 .bg-fpt-element-contact {
   background-image: url(../imgs/fox/3.png),
-    url(../imgs/page/homepage1/fpt-right-element.png);
+    url(../imgs/general/fpt-right-element.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 15%, 30%;
   background-position: bottom 20px right 100px, bottom -110px right;
 }
 
 @media (max-width: 768px) {
-  /* Điều chỉnh kích thước tùy theo breakpoint bạn muốn */
   .bg-fpt-element-contact {
-    background-image: url(../imgs/page/homepage1/fpt-right-element.png); /* Chỉ giữ lại ảnh còn lại */
+    background-image: url(../imgs/general/fpt-right-element.png);
     background-size: 30%;
     background-position: bottom -110px right;
   }
 }
 
 .bg-fpt-element-footer {
-  background-image: url(../imgs/page/homepage1/fpt-left-element.png);
+  background-image: url(../imgs/general/fpt-left-element.png);
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: bottom left -200px;
 }
 .bg-fpt-element-right {
-  background-image: url(../imgs/page/homepage1/fpt-right-element.png);
+  background-image: url(../imgs/general/fpt-right-element.png);
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: top right -120px;
 }
 .bg-fpt-element-left {
-  background-image: url(../imgs/page/homepage1/fpt-left-element.png);
+  background-image: url(../imgs/general/fpt-left-element.png);
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: top left -160px;
 }
 
 @media (max-width: 1440px) {
-  /* Điều chỉnh kích thước tùy theo breakpoint bạn muốn */
   .bg-fpt-element-left {
-    background-image: url(../imgs/page/homepage1/fpt-left-element.png);
+    background-image: url(../imgs/general/fpt-left-element.png);
     background-repeat: no-repeat;
     background-size: 0%;
     background-position: top left -160px;
@@ -3414,7 +3352,7 @@ ul li:last-child .card-list-4 {
 
 .box-newsletter {
   padding: 60px 0px 60px 0px;
-  background: url(../imgs/template/bg-newsletter.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/bg-newsletter.svg) no-repeat 0px 0px;
   background-size: cover;
   border-radius: 16px;
 }
@@ -3435,7 +3373,7 @@ ul li:last-child .card-list-4 {
   min-width: 122px;
   padding-left: 34px;
   padding-right: 15px;
-  background-image: url(../imgs/page/homepage1/search-icon.svg);
+  background-image: url(../imgs/general/icons/search-icon.svg);
   background-repeat: no-repeat;
   background-position: left 19px top 18px;
 }
@@ -3468,7 +3406,7 @@ ul li:last-child .card-list-4 {
 }
 .box-newsletter .box-form-newsletter .form-newsletter .select2::before {
   content: "";
-  background: url(../imgs/template/icons/icon-location-2.svg) no-repeat;
+  background: url(../imgs/general/icons/icon-location-2.svg) no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -3480,7 +3418,7 @@ ul li:last-child .card-list-4 {
   .form-newsletter
   .select2
   .select2-selection__arrow {
-  background: url(../imgs/template/icons/arrow-down.svg) no-repeat right 10px
+  background: url(../imgs/general/icons/arrow-down.svg) no-repeat right 10px
     center;
   top: 11px;
   width: 26px;
@@ -3504,7 +3442,7 @@ ul li:last-child .card-list-4 {
   .box-industry
   .select2::before {
   content: "";
-  background: url(../imgs/template/icons/industry.svg) no-repeat;
+  background: url(../imgs/general/icons/industry.svg) no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -3512,16 +3450,15 @@ ul li:last-child .card-list-4 {
   top: 15px;
 }
 .box-newsletter .box-form-newsletter .form-newsletter .input-email {
-  background: url(../imgs/page/homepage1/icon-email.svg) no-repeat left 10px
+  background: url(../imgs/general/icons/icon-email.svg) no-repeat left 10px
     center;
 }
 .box-newsletter .box-form-newsletter .form-newsletter .input-industry {
-  background: url(../imgs/template/icons/icon-job.svg) no-repeat left 18px
-    center;
+  background: url(../imgs/general/icons/icon-job.svg) no-repeat left 18px center;
 }
 .box-newsletter .icon-send-letter {
   position: relative;
-  background-image: url(../imgs/template/icons/apply.svg);
+  background-image: url(../imgs/general/icons/apply.svg);
   background-repeat: no-repeat;
   background-position: left 17px center;
   padding-left: 45px;
@@ -3536,7 +3473,6 @@ ul li:last-child .card-list-4 {
   overflow: hidden;
 }
 
-/* Ẩn input file mặc định */
 .box-newsletter
   .box-form-newsletter
   .form-newsletter
@@ -3550,7 +3486,7 @@ ul li:last-child .card-list-4 {
   .form-input[type="file"]::before {
   content: "Tải lên CV";
   display: inline-block;
-  background: url(../imgs/page/homepage1/upload-icon.svg) no-repeat left 10px
+  background: url(../imgs/general/icons/upload-icon.svg) no-repeat left 10px
     center;
   width: 100%;
   border-radius: 8px;
@@ -3617,10 +3553,10 @@ ul li:last-child .card-list-4 {
   margin-right: 3px;
 }
 .rate:not(:checked) > label.checked:before {
-  background: url(../imgs/template/icons/star.svg) no-repeat;
+  background: url(../imgs/general/icons/star.svg) no-repeat;
 }
 .rate > input:checked ~ label:before {
-  background: url(../imgs/template/icons/star.svg) no-repeat;
+  background: url(../imgs/general/icons/star.svg) no-repeat;
 }
 .rate.small {
   transform: scale(0.7);
@@ -3632,28 +3568,28 @@ ul li:last-child .card-list-4 {
 }
 
 #lien-he {
-  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px;
 }
 
 #tham-quan-cong-ty {
-  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px;
 }
 
 #van-hoa {
-  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px;
 }
 
 #phat-trien-su-nghiep {
-  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px;
 }
 
 #phuc-loi {
-  scroll-margin-top: 200px; /* Cách top 200px khi cuộn đến */
+  scroll-margin-top: 200px;
 }
 
 .breacrumb-cover {
   background-color: #f8faff;
-  background-image: url(../imgs/page/blog/bg-breadcrumb.png);
+  background-image: url(../imgs/page/eventnews/bg-breadcrumb.png);
   background-position: top center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -3679,7 +3615,7 @@ ul li:last-child .card-list-4 {
   left: 4px;
   width: 12px;
   height: 12px;
-  background: url(../imgs/template/icons/arrow-breadcrumb.svg) no-repeat center;
+  background: url(../imgs/general/icons/arrow-breadcrumb.svg) no-repeat center;
 }
 .breadcrumbs li a {
   font-size: 14px;
@@ -3701,7 +3637,7 @@ ul li:last-child .card-list-4 {
   padding-left: 0px;
 }
 .breadcrumbs .home-icon {
-  background: url(../imgs/page/blog/home.svg) no-repeat;
+  background: url(../imgs/page/eventnews/home.svg) no-repeat;
   padding: 0px 0px 0px 20px;
 }
 
@@ -3789,7 +3725,7 @@ ul li:last-child .card-list-4 {
   min-width: 122px;
   padding-left: 34px;
   padding-right: 15px;
-  background-image: url(../imgs/page/homepage1/search-icon.svg);
+  background-image: url(../imgs/general/icons/search-icon.svg);
   background-repeat: no-repeat;
   background-position: left 19px top 18px;
 }
@@ -3822,7 +3758,7 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero .block-banner .form-find .select2::before {
   content: "";
-  background: url(../imgs/template/icons/icon-location-2.svg) no-repeat;
+  background: url(../imgs/general/icons/icon-location-2.svg) no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -3830,7 +3766,7 @@ ul li:last-child .card-list-4 {
   top: 15px;
 }
 .banner-hero .block-banner .form-find .select2 .select2-selection__arrow {
-  background: url(../imgs/template/icons/arrow-down.svg) no-repeat right 10px
+  background: url(../imgs/general/icons/arrow-down.svg) no-repeat right 10px
     center;
   top: 11px;
   width: 26px;
@@ -3845,7 +3781,7 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero .block-banner .form-find .box-industry .select2::before {
   content: "";
-  background: url(../imgs/template/icons/industry.svg) no-repeat;
+  background: url(../imgs/general/icons/industry.svg) no-repeat;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -3853,24 +3789,23 @@ ul li:last-child .card-list-4 {
   top: 15px;
 }
 .banner-hero .block-banner .form-find .input-keysearch {
-  background: url(../imgs/page/homepage1/key-numbers.svg) no-repeat left 10px
+  background: url(../imgs/general/icons/key-numbers.svg) no-repeat left 10px
     center;
 }
 .banner-hero .block-banner .form-find .input-email {
-  background: url(../imgs/page/homepage1/icon-email.svg) no-repeat left 10px
+  background: url(../imgs/general/icons/icon-email.svg) no-repeat left 10px
     center;
 }
 .banner-hero .block-banner .form-find .input-industry {
-  background: url(../imgs/template/icons/icon-job.svg) no-repeat left 18px
-    center;
+  background: url(../imgs/general/icons/icon-job.svg) no-repeat left 18px center;
 }
 .banner-hero .block-banner .form-find .input-upload {
-  background: url(../imgs/page/homepage1/upload-icon.svg) no-repeat left 10px
+  background: url(../imgs/general/icons/upload-icon.svg) no-repeat left 10px
     center;
 }
 .form-find .icon-send-letter {
   position: relative;
-  background-image: url(../imgs/template/icons/apply.svg);
+  background-image: url(../imgs/general/icons/apply.svg);
   background-repeat: no-repeat;
   background-position: left 17px center;
   padding-left: 45px;
@@ -3933,10 +3868,10 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero.banner-image-single img {
   border-radius: 16px;
-  width: 100%; /* Chiều rộng 100% */
-  height: 30vh; /* Chiều cao 40% của viewport */
-  object-fit: cover; /* Cắt ảnh để vừa kích thước khung */
-  object-position: center; /* Căn giữa ảnh */
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
 }
 .banner-hero.banner-company {
   padding: 40px 20px 60px 20px;
@@ -4032,7 +3967,7 @@ ul li:last-child .card-list-4 {
   width: 100%;
   padding: 100px 0px 80px 0px;
   max-width: 100%;
-  background: url(../imgs/template/ftel-banner.webp) no-repeat center;
+  background: url(../imgs/general/ftel-banner.webp) no-repeat center;
   background-size: cover;
 }
 .banner-hero.hero-4::before {
@@ -4153,7 +4088,7 @@ ul li:last-child .card-list-4 {
   min-width: 139px;
 }
 .btn.btn-notify {
-  background: url(../imgs/template/icons/notify.svg) no-repeat center;
+  background: url(../imgs/general/icons/notify.svg) no-repeat center;
   display: inline-block;
   vertical-align: middle;
   height: 52px;
@@ -4164,7 +4099,7 @@ ul li:last-child .card-list-4 {
   content: "";
   height: 8px;
   width: 8px;
-  background: url(../imgs/template/icons/icon-notify.svg) no-repeat center;
+  background: url(../imgs/general/icons/icon-notify.svg) no-repeat center;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -4440,14 +4375,13 @@ ul li:last-child .card-list-4 {
   text-align: center;
   display: inline-block;
   background: linear-gradient(90deg, #ff6b17, #ffc640, #33ff8c, #00c2ff);
-  background-size: 300% 300%; /* Mở rộng gradient để tạo hiệu ứng */
+  background-size: 300% 300%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: moveGradient 3s infinite linear;
 }
 
-/* Animation để di chuyển gradient */
 @keyframes moveGradient {
   0% {
     background-position: 0% 50%;
@@ -5196,23 +5130,23 @@ ul li:last-child .card-list-4 {
   transition-duration: 0.2s;
 }
 .footer .icon-socials.icon-facebook {
-  background: url(../imgs/template/icons/facebook.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/facebook.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
 .footer .icon-socials.icon-youtube {
-  background: url(../imgs/template/icons/youtube.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/youtube.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
 .footer .icon-socials.icon-linkedin {
-  background: url(../imgs/template/icons/linkedin.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/linkedin.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
 .footer .icon-socials.icon-instagram {
-  background: url(../imgs/template/icons/instagram.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/instagram.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
 .footer .icon-socials.icon-zalo {
-  background: url(../imgs/template/icons/zalo.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/icons/zalo.svg) no-repeat 0px 0px;
   transition-duration: 0.2s;
 }
 
@@ -5244,7 +5178,7 @@ ul li:last-child .card-list-4 {
   background-color: #fff;
   transition-duration: 0.2s;
   background-color: #3c65f5;
-  background-image: url(../imgs/template/icons/go-top.svg);
+  background-image: url(../imgs/general/icons/go-top.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -7107,7 +7041,7 @@ ul li:last-child .card-list-4 {
   display: inline-block;
   width: 100%;
   padding: 4px 0px 4px 35px;
-  background: url(../imgs/template/icons/check-circle.svg) no-repeat left center;
+  background: url(../imgs/general/icons/check-circle.svg) no-repeat left center;
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
@@ -7193,7 +7127,7 @@ ul li:last-child .card-list-4 {
 }
 
 .bg-img-about {
-  background: url(../imgs/template/ftel.webp) no-repeat center;
+  background: url(../imgs/general/ftel.webp) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -7209,7 +7143,7 @@ ul li:last-child .card-list-4 {
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: url(../imgs/page/about/bg-black-trans.png) repeat-x bottom left;
+  background: url(../imgs/general/bg-black-trans.png) repeat-x bottom left;
   background-size: cover;
 }
 .bg-img-about h2,
@@ -7263,17 +7197,14 @@ ul li:last-child .card-list-4 {
   border-top: 1px solid #e1e5f0;
 }
 
-/* Ẩn checkbox thực hiện vai trò điều khiển trạng thái */
 input[type="checkbox"] {
   display: none;
 }
 
-/* Khi checkbox được chọn, hiển thị nội dung */
 input[type="checkbox"]:checked ~ .accordion-content {
   display: block;
 }
 
-/* Tùy chỉnh tiêu đề khi được mở */
 input[type="checkbox"]:checked ~ .accordion-title {
   background-color: #f8f9ff;
   border-bottom: 1px solid #e1e5f0;
@@ -7490,10 +7421,10 @@ input[type="checkbox"]:checked ~ .accordion-title {
 
 .nav-tavs-profile {
   background-color: white !important;
-  border: 2px solid #e0e6f6; /* Viền xám nhẹ, có thể chỉnh dày hơn */
+  border: 2px solid #e0e6f6;
   border-radius: 20px;
   padding: 20px 20px 0px 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 .nav-tavs-profile ul li {
   width: 100%;
@@ -7533,7 +7464,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
   height: auto;
 }
 .form-contact .search-icon {
-  background-image: url(../imgs/page/candidates/search.svg);
+  background-image: url(../imgs/page/userinformation/search.svg);
   background-position: right 15px top 11px;
   background-repeat: no-repeat;
 }
@@ -7560,7 +7491,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
   height: 85px;
   border: 1px solid #e0e6f6;
   border-radius: 16px;
-  background: #ffffff url(../imgs/template/icons/plus.svg) no-repeat center;
+  background: #ffffff url(../imgs/general/icons/plus.svg) no-repeat center;
   margin-right: 15px;
   position: relative;
   display: inline-block;
@@ -7581,7 +7512,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .close-icon {
-  background-image: url(../imgs/page/candidates/close.svg);
+  background-image: url(../imgs/page/userinformation/close.svg);
   background-position: center;
   display: inline-block;
   height: 7px;
@@ -7593,7 +7524,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .card-info {
   display: inline-block;
   padding: 0px 0px 0px 20px;
-  background-image: url(../imgs/page/candidates/info.svg);
+  background-image: url(../imgs/page/userinformation/info.svg);
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -7616,7 +7547,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .btn-editor {
-  background-image: url(../imgs/page/candidates/editor.svg);
+  background-image: url(../imgs/page/userinformation/editor.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #3c65f5;
@@ -8178,22 +8109,22 @@ input[type="checkbox"]:checked ~ .accordion-title {
   left: -1px;
 }
 .paginations .pager li .pager-prev {
-  background: url(../imgs/template/icons/page-prev.svg) no-repeat center;
+  background: url(../imgs/general/icons/page-prev.svg) no-repeat center;
   height: 48px;
   width: 48px;
   margin-right: 15px;
 }
 .paginations .pager li .pager-prev:hover {
-  background: url(../imgs/template/icons/page-prev-hover.svg) no-repeat center;
+  background: url(../imgs/general/icons/page-prev-hover.svg) no-repeat center;
 }
 .paginations .pager li .pager-next {
-  background: url(../imgs/template/icons/page-next.svg) no-repeat center;
+  background: url(../imgs/general/icons/page-next.svg) no-repeat center;
   height: 48px;
   width: 48px;
   margin-left: 15px;
 }
 .paginations .pager li .pager-next:hover {
-  background: url(../imgs/template/icons/page-next-hover.svg) no-repeat center;
+  background: url(../imgs/general/icons/page-next-hover.svg) no-repeat center;
 }
 
 .sidebar-with-bg {
@@ -8510,7 +8441,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 
 .sidebar-border-bg {
   border: 1px solid #e0e6f7;
-  background: #f2f6fd url(../imgs/page/company/bg-hiring.svg) no-repeat bottom
+  background: #f2f6fd url(../imgs/general/icons/bg-hiring.svg) no-repeat bottom
     left;
   padding: 30px 40px 260px 40px;
   border-radius: 4px;
@@ -8536,7 +8467,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .bg-right {
-  background: #f2f6fd url(../imgs/page/company/bg-hiring-right.svg) no-repeat
+  background: #f2f6fd url(../imgs/page/eventnews/bg-hiring-right.svg) no-repeat
     bottom right;
 }
 
@@ -8561,7 +8492,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .aboutus-icon {
-  background-image: url(../imgs/page/company/icon-about.svg);
+  background-image: url(../imgs/general/icons/icon-about.svg);
   background-position: 17px 14px;
   background-repeat: no-repeat;
   font-weight: 500;
@@ -8571,13 +8502,13 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .aboutus-icon:hover,
 .aboutus-icon.active {
   color: #05264e;
-  background-image: url(../imgs/page/company/icon-about-hover.svg);
+  background-image: url(../imgs/general/icons/icon-about-hover.svg);
   background-color: #ffffff;
   border: 2px solid #e0e6f6;
 }
 
 .recruitment-icon {
-  background-image: url(../imgs/page/company/icon-recruitment.svg);
+  background-image: url(../imgs/general/icons/icon-recruitment.svg);
   background-position: 17px 14px;
   background-repeat: no-repeat;
   font-weight: 500;
@@ -8587,13 +8518,13 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .recruitment-icon:hover,
 .recruitment-icon.active {
   color: #05264e;
-  background-image: url(../imgs/page/company/icon-recruitment-hover.svg);
+  background-image: url(../imgs/general/icons/icon-recruitment-hover.svg);
   background-color: #ffffff;
   border: 2px solid #e0e6f6;
 }
 
 .people-icon {
-  background-image: url(../imgs/page/company/icon-people.svg);
+  background-image: url(../imgs/general/icons/icon-people.svg);
   background-position: 17px 14px;
   background-repeat: no-repeat;
   font-weight: 500;
@@ -8603,7 +8534,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .people-icon:hover,
 .people-icon.active {
   color: #05264e;
-  background-image: url(../imgs/page/company/icon-people-hover.svg);
+  background-image: url(../imgs/general/icons/icon-people-hover.svg);
   background-color: #ffffff;
   border: 2px solid #e0e6f6;
 }
@@ -8649,7 +8580,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .bg-homepage1 {
-  background-image: url(../imgs/page/homepage1/bg-banner.svg);
+  background-image: url(../imgs/general/bg-banner.svg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: cover;
@@ -8739,7 +8670,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
 }
 
 .icon-location {
-  background: url(../imgs/template/icons/location.svg) no-repeat 0px 2px;
+  background: url(../imgs/general/icons/location.svg) no-repeat 0px 2px;
   display: inline-block;
   padding: 0px 0px 0px 20px;
 }
@@ -8783,7 +8714,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
   right: -5px;
   height: 120px;
   width: 250px;
-  background: url(../imgs/page/homepage1/bg-right-hiring.svg) no-repeat 0px 0px;
+  background: url(../imgs/general/bg-right-hiring.svg) no-repeat 0px 0px;
   background-size: cover;
 }
 .box-we-hiring .text-we-are {
@@ -8895,43 +8826,11 @@ input[type="checkbox"]:checked ~ .accordion-title {
 
 .box-checkbox {
   padding: 0px 0px 0px 30px;
-  background: url(../imgs/page/homepage3/check-box.svg) no-repeat 0px 4px;
+  background: url(../imgs/general/icons/check-box.svg) no-repeat 0px 4px;
 }
 
 .img-job-search {
   height: 100%;
-}
-
-.bg-homepage4 {
-  background-image: url(../imgs/page/homepage4/bg-banner.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  min-height: 750px;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  top: 0;
-  right: 0;
-}
-
-.banner-homepage4 .banner-inner .block-banner {
-  padding: 50px 0px 80px 192px;
-}
-.banner-homepage4 .banner-inner .banner-imgs .block-1 {
-  left: 0px;
-}
-
-.bg-cat {
-  background-image: url(../imgs/page/homepage4/bg-cat.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  padding: 70px 0px 150px 0px;
-}
-
-.layout-brand-1 .card-grid-5 .box-cover-img {
-  background: url(../imgs/page/homepage4/bg-brand-1.png) repeat-x center bottom;
 }
 
 .swiper-pagination-style-border {
@@ -8944,13 +8843,6 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .swiper-pagination-style-border .swiper-pagination-customs-active,
 .swiper-pagination-style-border .swiper-pagination-customs:hover {
   background-color: #05264e !important;
-}
-
-.box-newsletter-2 {
-  background: url(../imgs/page/homepage4/bg-newsletter.png) no-repeat top center;
-  background-size: cover;
-  padding: 100px 0px 90px 0px;
-  border-radius: 0px;
 }
 
 .box-search-2 {
@@ -8967,73 +8859,6 @@ input[type="checkbox"]:checked ~ .accordion-title {
 .box-search-2 .block-banner .form-find .select2:after {
   right: auto;
   left: -3px;
-}
-
-.banner-homepage5 .banner-inner .row .block-banner {
-  padding-right: 70px;
-  padding-top: 90px;
-}
-.banner-homepage5 .banner-imgs {
-  min-height: 550px;
-  width: 100%;
-  position: relative;
-}
-.banner-homepage5 .banner-imgs::before {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: url(../imgs/page/homepage5/bg-banner.png) no-repeat top center;
-  background-size: contain;
-  content: "";
-  z-index: 1;
-}
-.banner-homepage5 .banner-imgs .banner-1 {
-  position: absolute;
-  z-index: 2;
-  top: 30px;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  max-width: 356px;
-  margin: auto;
-  max-height: 356px;
-}
-.banner-homepage5 .banner-imgs .banner-2 {
-  position: absolute;
-  z-index: 2;
-  max-width: 192px;
-  top: 30px;
-  left: 0px;
-}
-.banner-homepage5 .banner-imgs .banner-3 {
-  position: absolute;
-  z-index: 2;
-  max-width: 165px;
-  bottom: 0px;
-  left: 0px;
-}
-.banner-homepage5 .banner-imgs .banner-4 {
-  position: absolute;
-  z-index: 2;
-  max-width: 145px;
-  top: 30px;
-  right: 80px;
-}
-.banner-homepage5 .banner-imgs .banner-5 {
-  position: absolute;
-  z-index: 2;
-  max-width: 131px;
-  top: 300px;
-  right: 30px;
-}
-.banner-homepage5 .banner-imgs .banner-6 {
-  position: absolute;
-  z-index: 2;
-  max-width: 120px;
-  bottom: -30px;
-  right: 170px;
 }
 
 .box-logos-485 {
@@ -9068,11 +8893,6 @@ input[type="checkbox"]:checked ~ .accordion-title {
   border-radius: 10px;
 }
 
-.box-newsletter-3 {
-  background: url(../imgs/page/homepage5/bg-newsletter.png) no-repeat top center;
-  background-size: cover;
-}
-
 .box-step {
   text-align: center;
 }
@@ -9100,7 +8920,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
   position: absolute;
   top: 45px;
   left: 68%;
-  background: url(../imgs/page/homepage5/step1.svg) no-repeat;
+  background: url(../imgs/page/homepage/step1.svg) no-repeat;
   background-size: contain;
   z-index: 1;
 }
@@ -9115,7 +8935,7 @@ input[type="checkbox"]:checked ~ .accordion-title {
   position: absolute;
   top: 45px;
   left: 68%;
-  background: url(../imgs/page/homepage5/step1.svg) no-repeat;
+  background: url(../imgs/page/homepage/step1.svg) no-repeat;
   background-size: contain;
   z-index: 1;
 }
@@ -9181,37 +9001,6 @@ input[type="checkbox"]:checked ~ .accordion-title {
   background-color: #ffffff !important;
 }
 
-@media (max-width: 1399.98px) {
-  .custom-class {
-    display: block;
-  }
-  .banner-homepage5 .banner-imgs .banner-1 {
-    max-width: 256px;
-    max-height: 256px;
-  }
-  .banner-homepage5 .banner-imgs .banner-2 {
-    max-width: 152px;
-    max-height: 152px;
-  }
-  .banner-homepage5 .banner-imgs .banner-3 {
-    max-width: 132px;
-    max-height: 132px;
-  }
-  .banner-homepage5 .banner-imgs .banner-4 {
-    max-width: 115px;
-    max-height: 115px;
-    bottom: 20px;
-  }
-  .banner-homepage5 .banner-imgs .banner-5 {
-    max-width: 95px;
-    max-height: 95px;
-  }
-  .banner-homepage5 .banner-imgs .banner-6 {
-    max-width: 85px;
-    max-height: 85px;
-    bottom: 10px;
-  }
-}
 @media (max-width: 1199.98px) {
   .swiper-style-2 .item-5 {
     width: 25%;
